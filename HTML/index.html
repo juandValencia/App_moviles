@@ -2,63 +2,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	 <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta charset="UTF-8">
+	 <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
 	<title>Single App ejemplo</title>
-	<style type="text/css">
-		section{
-			width:340px;	
-			height:440px;
-			text-align: center;
-		}
-		#splash{
-			background: LightSeaGreen;
-		}
-		#home{
-			background: OrangeRed;
-		}
-		#juego{
-			background: Violet;
-		}
-		#instrucciones{
-			background: YellowGreen;
-		}
-		#creditos{
-			background: DeepSkyBlue;
-		}	
-		#instrucciones p{
-			margin:25px;
-			text-align: left;
-		}	
-		.boton{
-			background-color: Navy;
-			color:white;
-			padding: 10px;
-			text-decoration: none;
-		}
-		.volver{
-			margin-left: -300px;
-			line-height: 50px;
-		}
-	</style>
+
+<!--	<style type="text/css">
+
+</style> -->
 </head>
 <body>
+	<!-- prueba -->
+<section >
+	<div><h4>Diseños</h4></div>
+<br>
+<br>
+<div class="lista">
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Diseño</p>
+				<img src="IMG/tatto1.png" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button name="BotonVerDieño">Ver Diseño</button>
+			</div>
+		</div>
+
+
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Diseño</p>
+				<img src="IMG/tatto2.png" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button name="BotonVerDieño">Ver Diseño</button>
+			</div>
+		</div>
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Diseño</p>
+				<img src="IMG/tatto3.png" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button name="BotonVerDieño">Ver Diseño</button>
+			</div>
+			</div>
+
+			</div>
+
+</div>
+
+</div>
+</section>
 	<!-- Splash -->
-	<section id="splash">
+	<section id="Login">
+
 		<br>
-		<h1>Splash del juego</h1>
-		<img src="http://icons.iconarchive.com/icons/sonya/swarm/128/ivoted-2014-icon.png" alt="">
+		<img src="IMG/logo.png" alt="" class="logo">
+		<br>
+		<label for="Name">sign up</label>
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Usuario" name="UsuarioInicio">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Contraseña" name="UsuarioContraseña">
+		<br>
+		<br>
+		<label><input type="checkbox" id="cbox1" value="first_checkbox"> Recordar Contraseña</label><br>
+		<br>
+		<br>
+		<br>
+		<button class="button button5" name="Olvidaste">¿Olvidaste contraseña?</button>
+		<br>
+		<button name="BotonInicio">Login</button>
+		<br>
+		<br>
+		<button class="button button5" name="Registro1">Sign up</button>
+		<br>
+
 	</section>
 	<!-- Home -->
-	<section id="home">
+	<section id="Registro">
 		<br>
-		<h1>Nombre del juego</h1>
-		<img src="http://icons.iconarchive.com/icons/sonya/swarm/128/ivoted-2014-icon.png" alt="">
+		<h1>Registro</h1>
+		<img src="IMG/logo2.png" alt="" class="logo">
+		<br>
+		<label for="Name">Sign up</label>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Nombre" name="nombre">
 		<br>
 		<br>
-		<a href="#">Juego</a><br><br>
-		<a href="#">Instrucciones</a><br><br>
-		<a href="#">Créditos</a><br>
+		<input type="text" size="15" maxlength="30" value="Usuario" name="Usuario">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Correo" name="Correo">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Contraseña" name="Contraseña">
+		<br><br>
+		<input type="text" size="15" maxlength="30" value="Repetir Contraseña" name="Rcontraseña">
+		<br>
+		<br>
+		<button name="BotonRegistro">Registrarse</button>
+		<br>
+
+
+
+
+	</section>
+	<!-- EnvioCodigo -->
+	<section id="EnvioCodigo">
+		<a href="#" class="boton volver">&lt;</a>
+		<br>
+	 	<img src="IMG/logo2.png" alt="" class="logo">
+		<br>
+		<input type="text" size="15" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Ingrese codigo" name="Codigo1">
+		<br>
+		<br>
+		<div>
+
+			<button class="button button5" name="ReenviarCodigo">Reenviar Codigo</button>
+			</div>
+			<div>
+			<button  name="BotonRestablecer">Restablecer</button>
+			<br>
+</div>
+
+
+
+	</section>
+	<section id="BarraDesplegable">
+		<br>
+
+		<b>Menu</b>
+		<br>
+		<br>
+		<button class="button button5" name="Inicio1">inicio</button>
+		<br>
+		<br>
+		<button class="button button5" name="Calendario1">Calendario</button>
+		<br>
+		<br>
+		<button class="button button5"  name="Contactanos1">Contactanos</button>
+		<br>
+		<br>
+		<button name="Logout">Log out</button>
+
+
+
+
+	</section>
+	<section id="RestablecerContraseña">
+		<a href="#" class="boton volver">&lt;</a>
+		<br>
+
+		<h1>juanpepito@correo.com</h1>
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Nueva contraseña" name="NuevaContraseña1">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Repetir contraeña" name="RepetirContra1">
+		<br>
+		<br>
+		<button name="BotonRestablecer2">Restablecer</button>
+		<br>
+
+
+
+
+	</section>
+
+
+</section>
+
+<section id="Diseño">
+	<a href="#" class="boton volver">&lt;</a>
+	<br>
+	<h1>Nombre Tatuaje</h1>
+	<br>
+	<img src="IMG/tatto1.png" alt="" class="logo">
+	<br>
+	<br>
+	<p>dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
+	<br>
+  <u>($)</u>	<input type="text" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
+	<br>
+  <u>(*)</u>	<input type="text" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+	<br>
+	<u>(._.)</u> <input type="text" size="15" maxlength="30" value="juanito xd" name="Nombre tatuador" readonly>
+	<br>
+	<button name="Siguiente">Siguiente</button>
+
+</section>
+<section id="Reservar">
+	<a href="#" class="boton volver">&lt;</a>
+	<br>
+	<h1>Nombre Tatuaje</h1>
+	<br>
+	<img src="IMG/tatto1.png" alt="" class="logo">
+	<br>
+	<br>
+	<p>dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
+	<br>
+  <u>($)</u>	<input type="text" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
+	<br>
+  <u>(*)</u>	<input type="text" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+	<br>
+	<u>fecha</u>	<input type="text" size="15" maxlength="30" value="23-12-2131" name="fechaReserva" readonly>
+	<br>
+	<u>tamaño</u>	<input type="text" size="15" maxlength="30" value="25 cm" name="tamañoTatu" readonly>
+	<br>
+	<button name="ReservarTatu">Reservar</button>
+
+</section>
+<section id="ReservaExitosa">
+	<a href="#" class="boton volver">&lt;</a>
+	<br>
+	<img src="IMG/OK.png" alt="" class="logo">
+	<br>
+	<br>
+	<u>Reserva exitosa</u>
+	<br>
+
+
+</section>
+<section id="Whatsapp">
+	<a href="#" class="boton volver">&lt;</a>
+	<br>
+	<img src="IMG/wpp.png" alt="" class="logo">
+	<br>
+	<br>
+	<u>Reserva exitosa</u>
+	<br>
+
+
+</section>
+
+	<section id="Calendario">
+		<a href="#" class="boton volver">&lt;</a>
+		<br>
+	 	<h1>Mi cita</h1>
+		<br>
+		<div class="calendario">
+			<h1 class="grande">30</h1>
+			<p class="grande">Abril</p>
+		</div>
+		<br>
+
+
+	</section>
+
+	<!-- Inicio -->
+	<section id="Inicio">
+		<br>
+		<h1>Inicio</h1>
+		<br>
+
+
+
+																 <table border="1" class="pequeña">
+																    <caption>Estudios</caption>
+																    <tr>
+																        <th>Estudio</th>
+																        <td>Informacion</td>
+																    </tr>
+																   <tr>
+																        <td>Estudio miguelin</td>
+
+																    </tr>
+																    <tr>
+																        <th rowspan="2"><img src="IMG/estudio1.jpg" alt=""></th>
+																        <td>nsdbhbsahdhjsabdhsbdhbsahdbasfjnmjwnjdjhdbbdjhajdnjnfhjbanjsndhbdbahbhdhwbdhbwhdbajbdj</td>
+																    </tr>
+																    <tr>
+																        <td><button name="BotonVerDieño">ver diseños</button></td>
+																    </tr>
+																 </table>
+
+
+
 	</section>
 	<!-- Juego -->
 	<section id="juego">

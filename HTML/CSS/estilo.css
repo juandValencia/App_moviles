@@ -1,97 +1,161 @@
 /*Modifique el ancho luego pruebe en su celular*/
-div{
-  width:320px;
-  height:440px;
-  background:hotpink;
-  overflow:auto;
+
+div.calendario{
+    width:100;
+  height:100px;
+}
+div.lista{
+  width:100%;
+  height:300px;
+  overflow-y: : scroll;
+  overflow-x: hidden;
+}
+div.elemento{
+  width:90%;
+  height:120px;
+border-left-style:hidden;
+border-right: solid;
+border-top: solid;
+border-radius: solid;
+border-color: black;
+display: flex;
+justify-content: center;
+
+}
+.bloqueflotante{
+  float:left;
+  width:90%;
+  height:100%;
+
+
 }
 
+h1.grande{
+    font-size:50px
+}
+.fuentapequña{
+  font-size: 63%;
+}
 
 /* 🚨 Estos estilos no se modifican para probar el ancho*/
 
 body{
   font-family:sans-serif;
 }
-div{
-  padding:10px;
+
+table.pequeña{
+    border-style: solid;
+    background-size: contain;
+    width: 80%;
+    height: 80%
 }
 
-/* CSS Simple Pre Code */
-pre {
-    background: #333;
-    white-space: pre;
-    word-wrap: break-word;
-    overflow: auto;
+
+
+.logo{
+  width:100px;
+  height:100px;
 }
 
-pre.code {
-    margin: 20px 25px;
-    border-radius: 4px;
-    border: 1px solid #292929;
-    position: relative;
+.imagenpequena{
+  width:55%;
+  height:55%;
 }
 
-pre.code label {
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    color: #ddd;
-    position: absolute;
-    left: 1px;
-    top: 15px;
-    text-align: center;
-    width: 60px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    pointer-events: none;
+
+section{
+  width:310px;
+  height:450px;
+  text-align: center;
+  border-style: solid;
+border-color: black;
+
+}
+section.centrada{
+    width:310px;
+  height:450px;
+  text-align: center;
+  border-style: solid;
+border-color: black;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.calendario{
+    width:200px;
+  height:200px;
+   margin:0px auto;
+  border-style: solid;
+    border-color: black;
+}
+#splash{
+  background: LightSeaGreen;
+}
+#Registro{
+  background: #C4C4C4;
+}
+#juego{
+  background: Violet;
+}
+#Diseño{
+  background: Violet;
+}
+#Reservar{
+  background: Violet;
+}
+#Whatsapp{
+  background: Violet;
 }
 
-pre.code code {
-    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
-    display: block;
-    margin: 0 0 0 60px;
-    padding: 15px 16px 14px;
-    border-left: 1px solid #555;
-    overflow-x: auto;
-    font-size: 13px;
-    line-height: 19px;
-    color: #ddd;
+#ReservaExitosa{
+  background: Violet;
+}
+#Inicio{
+  background: #FF5733;
+}
+#instrucciones{
+  background: YellowGreen;
+}
+#creditos{
+  background: DeepSkyBlue;
+}
+#instrucciones p{
+  margin:25px;
+  text-align: left;
 }
 
-pre::after {
-    content: "double click to selection";
-    padding: 0;
-    width: auto;
-    height: auto;
-    position: absolute;
-    right: 18px;
-    top: 14px;
-    font-size: 12px;
-    color: #ddd;
-    line-height: 20px;
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    transition: all 0.3s ease;
+.boton{
+  background-color: Navy;
+  color:white;
+  padding: 10px;
+  text-decoration: none;
+}
+.volver{
+  margin-left: -300px;
+  line-height: 50px;
 }
 
-pre:hover::after {
-    opacity: 0;
-    visibility: visible;
+.button5 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-pre.code-css code {
-    color: #91a7ff;
+.button5 {
+  background-color: white;
+  color: black;
+  outline: none;
 }
 
-pre.code-html code {
-    color: #aed581;
-}
-
-pre.code-javascript code {
-    color: #ffa726;
-}
-
-pre.code-jquery code {
-    color: #4dd0e1;
+.button5:hover {
+  background-color: #555555;
+  color: white;
 }
