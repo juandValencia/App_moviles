@@ -4,19 +4,31 @@
 <head>
 	<meta charset="UTF-8">
 	 <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+	 <script type="text/javascript" src="JS/main.js"></script>
 	<title>Single App ejemplo</title>
 
 <!--	<style type="text/css">
 
 </style> -->
+
 </head>
 <body>
-	<!-- prueba -->
-<section >
+
+	<!--Splash-->
+
+	<section  id="splash"  >
+		<div class="centrada">
+			<img src="IMG/logo.png" class="logoMedio">
+		</div>
+	</section>
+	<!-- Diseños -->
+<section id="Diseños" class="ocultar">
+	<button id="atras1" class="volver" name="btnAtras"><</button>
+	<br>
 	<div><h4>Diseños</h4></div>
-<br>
-<br>
-<div class="lista">
+		<br>
+		<br>
+		<div class="lista">
 		<div class="elemento">
 			<div class="bloqueflotante">
 				<p class="fuentapequña">Nombre Diseño</p>
@@ -55,12 +67,61 @@
 
 			</div>
 
-</div>
+		</div>
 
-</div>
+	</div>
 </section>
-	<!-- Splash -->
-	<section id="Login">
+
+<!-- Inicio --->
+<section id="Inicio" class="ocultar">
+	<div><h4>Estudios</h4></div>
+		<br>
+		<br>
+		<div class="lista">
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Estudio</p>
+				<img src="IMG/estudio1.jpg" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button id="BotonEstudioInicio" name="BotonVerEstudio">Ver Estudio</button>
+			</div>
+		</div>
+
+
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Estudio</p>
+				<img src="IMG/estudio2.jpg" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button id="BotonEstudioInicio" name="BotonVerEstudio">Ver Estudio</button>
+			</div>
+		</div>
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Estudio</p>
+				<img src="IMG/estudio3.jpg" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button id="BotonEstudioInicio" name="BotonVerEstudio">Ver Estudio</button>
+			</div>
+			</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</section>
+	<!-- Login -->
+	<section id="Login" class="ocultar">
 
 		<br>
 		<img src="IMG/logo.png" alt="" class="logo">
@@ -78,20 +139,21 @@
 		<br>
 		<br>
 		<br>
-		<button class="button button5" name="Olvidaste">¿Olvidaste contraseña?</button>
+		<button  id="Olvidaste" class="button button5" name="Olvidaste">¿Olvidaste contraseña?</button>
 		<br>
-		<button name="BotonInicio">Login</button>
+		<button id="BotonInicio" name="BotonInicio">Login</button>
 		<br>
 		<br>
-		<button class="button button5" name="Registro1">Sign up</button>
+		<button id="BotonRegistro" class="button button5" name="Registro1">Sign up</button>
 		<br>
 
 	</section>
-	<!-- Home -->
-	<section id="Registro">
+	<!-- Registro -->
+	<section id="Registro" class="ocultar">
+		<button id="atras2" class="volver" name="btnAtras"><</button>
 		<br>
 		<h1>Registro</h1>
-		<img src="IMG/logo2.png" alt="" class="logo">
+		<img src="IMG/logo.png" alt="" class="logo">
 		<br>
 		<label for="Name">Sign up</label>
 		<br>
@@ -109,7 +171,7 @@
 		<input type="text" size="15" maxlength="30" value="Repetir Contraseña" name="Rcontraseña">
 		<br>
 		<br>
-		<button name="BotonRegistro">Registrarse</button>
+		<button id="BotonRegistoRegistro"  name="BotonRegistro">Registrarse</button>
 		<br>
 
 
@@ -117,10 +179,10 @@
 
 	</section>
 	<!-- EnvioCodigo -->
-	<section id="EnvioCodigo">
-		<a href="#" class="boton volver">&lt;</a>
+	<section id="EnvioCodigo" class="ocultar">
+		<button id="atras3" class="volver" name="btnAtras"><</button>
 		<br>
-	 	<img src="IMG/logo2.png" alt="" class="logo">
+	 	<img src="IMG/logo.png" alt="" class="logo">
 		<br>
 		<input type="text" size="15" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
 		<br>
@@ -133,36 +195,18 @@
 			<button class="button button5" name="ReenviarCodigo">Reenviar Codigo</button>
 			</div>
 			<div>
-			<button  name="BotonRestablecer">Restablecer</button>
+			<button id="BotonRestablecerEnvioCodigo" name="BotonRestablecer">Restablecer</button>
 			<br>
-</div>
-
-
-
-	</section>
-	<section id="BarraDesplegable">
-		<br>
-
-		<b>Menu</b>
-		<br>
-		<br>
-		<button class="button button5" name="Inicio1">inicio</button>
-		<br>
-		<br>
-		<button class="button button5" name="Calendario1">Calendario</button>
-		<br>
-		<br>
-		<button class="button button5"  name="Contactanos1">Contactanos</button>
-		<br>
-		<br>
-		<button name="Logout">Log out</button>
-
-
 
 
 	</section>
-	<section id="RestablecerContraseña">
-		<a href="#" class="boton volver">&lt;</a>
+
+
+
+		<!-- REstablecer COntraseña -->
+	<section id="RestablecerContrasena" class="ocultar">
+		<button id="atras4" class="volver" name="btnAtras1"><</button>
+
 		<br>
 
 		<h1>juanpepito@correo.com</h1>
@@ -174,7 +218,7 @@
 		<input type="text" size="15" maxlength="30" value="Repetir contraeña" name="RepetirContra1">
 		<br>
 		<br>
-		<button name="BotonRestablecer2">Restablecer</button>
+		<button id="BotonRestablecerRestablecerContrasena" name="BotonRestablecer2">Restablecer</button>
 		<br>
 
 
@@ -185,8 +229,8 @@
 
 </section>
 
-<section id="Diseño">
-	<a href="#" class="boton volver">&lt;</a>
+<section id="Diseño" class="ocultar">
+	<button id="atras5" class="volver" name="btnAtras"><</button>
 	<br>
 	<h1>Nombre Tatuaje</h1>
 	<br>
@@ -201,11 +245,13 @@
 	<br>
 	<u>(._.)</u> <input type="text" size="15" maxlength="30" value="juanito xd" name="Nombre tatuador" readonly>
 	<br>
-	<button name="Siguiente">Siguiente</button>
+	<button id="BotonSiguienteDiseño" name="Siguiente">Siguiente</button>
 
 </section>
-<section id="Reservar">
-	<a href="#" class="boton volver">&lt;</a>
+
+<!-- Reserva-->
+<section id="Reservar" class="ocultar">
+	<button id="atras6" class="volver" name="btnAtras"><</button>
 	<br>
 	<h1>Nombre Tatuaje</h1>
 	<br>
@@ -222,11 +268,13 @@
 	<br>
 	<u>tamaño</u>	<input type="text" size="15" maxlength="30" value="25 cm" name="tamañoTatu" readonly>
 	<br>
-	<button name="ReservarTatu">Reservar</button>
+	<button id="BotonReservarReservar" name="ReservarTatu">Reservar</button>
 
 </section>
-<section id="ReservaExitosa">
-	<a href="#" class="boton volver">&lt;</a>
+
+	<!-- notficacion -->
+<section id="ReservaExitosa" class="ocultar">
+	<button id="atras7" class="volver" name="btnAtras"><</button>
 	<br>
 	<img src="IMG/OK.png" alt="" class="logo">
 	<br>
@@ -236,8 +284,8 @@
 
 
 </section>
-<section id="Whatsapp">
-	<a href="#" class="boton volver">&lt;</a>
+<section id="Whatsapp" class="ocultar">
+	<button id="atras8" class="volver" name="btnAtras"><</button>
 	<br>
 	<img src="IMG/wpp.png" alt="" class="logo">
 	<br>
@@ -248,8 +296,8 @@
 
 </section>
 
-	<section id="Calendario">
-		<a href="#" class="boton volver">&lt;</a>
+	<section id="Calendario" class="ocultar">
+		<button id="atras9" class="volver" name="btnAtras"><</button>
 		<br>
 	 	<h1>Mi cita</h1>
 		<br>
@@ -261,75 +309,28 @@
 
 
 	</section>
-
-	<!-- Inicio -->
-	<section id="Inicio">
-		<br>
-		<h1>Inicio</h1>
+		<!-- BarraDesplegalbe-->
+	<section id="BarraDesplegable" class="ocultar">
 		<br>
 
-
-
-																 <table border="1" class="pequeña">
-																    <caption>Estudios</caption>
-																    <tr>
-																        <th>Estudio</th>
-																        <td>Informacion</td>
-																    </tr>
-																   <tr>
-																        <td>Estudio miguelin</td>
-
-																    </tr>
-																    <tr>
-																        <th rowspan="2"><img src="IMG/estudio1.jpg" alt=""></th>
-																        <td>nsdbhbsahdhjsabdhsbdhbsahdbasfjnmjwnjdjhdbbdjhajdnjnfhjbanjsndhbdbahbhdhwbdhbwhdbajbdj</td>
-																    </tr>
-																    <tr>
-																        <td><button name="BotonVerDieño">ver diseños</button></td>
-																    </tr>
-																 </table>
+		<b>Menu</b>
+		<br>
+		<br>
+		<button id="BotonInicioBarraDesplegable" class="button button5" name="Inicio1">inicio</button>
+		<br>
+		<br>
+		<button id="BotonCalendarioBarraDesplegable" class="button button5" name="Calendario1">Calendario</button>
+		<br>
+		<br>
+		<button id="BotonContactanosBarraDesplegable" class="button button5"  name="Contactanos1">Contactanos</button>
+		<br>
+		<br>
+		<button id="BotonLogoutBarraDesplegable" name="Logout">Log out</button>
 
 
 
-	</section>
-	<!-- Juego -->
-	<section id="juego">
-		<a href="#" class="boton volver">&lt;</a>
-		<br>
-		<h1>Juego</h1>
-		<br>
-		<img src="http://icons.iconarchive.com/icons/sonya/swarm/128/Mona-Lisa-icon.png" alt="">
-		<br>
-		<br>
-		<a href="#">Miguel Angel</a>&nbsp;&nbsp;
-		<a href="#">Fernando Botero</a><br><br>
-		<a href="#">Alberto Durero</a>&nbsp;&nbsp;
-		<a href="#">Leonardo da Vinci</a><br><br>
-	</section>
-	<!-- Créditos / Autores -->
-	<section id="creditos">
-		<a href="#" class="boton volver">&lt;</a>
-		<br>
-		<br>
-		<h1>Créditos - Estudiantes</h1>
-		<br>
-		<img src="http://icons.iconarchive.com/icons/hopstarter/superhero-avatar/64/Avengers-Black-Widow-icon.png" alt="">&nbsp;&nbsp;
-		<span>Nombre Estudiante / Diseñad@r</span> <br>
-		<img src="http://icons.iconarchive.com/icons/hopstarter/superhero-avatar/64/Avengers-Iron-Man-icon.png" alt="">&nbsp;&nbsp;
-		<span>Nombre Estudiante / Ingeniero</span> <br>
-		<img src="http://icons.iconarchive.com/icons/hopstarter/superhero-avatar/64/Avengers-Thor-icon.png" alt="">&nbsp;&nbsp;
-		<span>Nombre Estudiante / Ingeniero</span>
-	</section>
-	<!-- Instrucciones -->
-	<section id="instrucciones">
-		<a href="#" class="boton volver">&lt;</a>
-		<h1>Instrucciones</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates suscipit consequatur eligendi eos, hic aperiam sit! Recusandae explicabo provident sapiente beatae nam soluta ab minima omnis sed! <br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus aliquam odit, iusto earum ipsum. Repudiandae deleniti corporis, praesentium accusantium aspernatur temporibus quisquam minus, soluta provident molestiae. Tempore, aliquid, fugit. <br>
 
-		</p>
-		<a href="#" class="boton">&lt;</a>&nbsp;&nbsp;<a href="" class="boton">&gt;</a>
 	</section>
 </body>
+
 </html>
