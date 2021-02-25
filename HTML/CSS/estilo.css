@@ -19,6 +19,7 @@ border-right: solid;
 border-top: solid;
 border-radius: solid;
 border-color: black;
+ border-width:1px;
 display: flex;
 justify-content: center;
 
@@ -29,7 +30,8 @@ justify-content: center;
   height:100%;
 }
 .ocultar{
-  display: none;
+   /* display: none;*/
+display: none
 }
 
 h1.grande{
@@ -75,6 +77,7 @@ section{
   text-align: center;
   border-style: solid;
 border-color: black;
+ border-width:2px;
 
 
 }
@@ -145,6 +148,10 @@ float: left;
 color: pink;
 background-color: black;
 }
+.barra{
+  float: right;
+
+}
 
 .button5 {
   background-color: #4CAF50;
@@ -169,4 +176,27 @@ background-color: black;
 .button5:hover {
   background-color: #555555;
   color: white;
+}
+
+.barra{
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.barra:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.barra:active {
+	position:relative;
+	top:1px;
 }

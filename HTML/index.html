@@ -17,12 +17,14 @@
 	<!--Splash-->
 
 	<section  id="splash"  >
+
 		<div class="centrada">
 			<img src="IMG/logo.png" class="logoMedio">
 		</div>
 	</section>
 	<!-- Diseños -->
 <section id="Diseños" class="ocultar">
+		<button class="barra">☰</button>
 	<button id="atras1" class="volver" name="btnAtras"><</button>
 	<br>
 	<div><h4>Diseños</h4></div>
@@ -37,7 +39,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
-				<button name="BotonVerDieño">Ver Diseño</button>
+				<button id="Diseño1"  onclick="GuardarID(this.id)" class="BotonVerDieño">Ver Diseño</button>
 			</div>
 		</div>
 
@@ -50,7 +52,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
-				<button name="BotonVerDieño">Ver Diseño</button>
+				<button id="Diseño2" onclick="GuardarID(this.id)" class="BotonVerDieño">Ver Diseño</button>
 			</div>
 		</div>
 		<div class="elemento">
@@ -61,7 +63,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
-				<button name="BotonVerDieño">Ver Diseño</button>
+				<button id="Diseño3" onclick="GuardarID(this.id)" class="BotonVerDieño">Ver Diseño</button>
 			</div>
 			</div>
 
@@ -74,6 +76,8 @@
 
 <!-- Inicio --->
 <section id="Inicio" class="ocultar">
+	<button class="barra">☰</button>
+
 	<div><h4>Estudios</h4></div>
 		<br>
 		<br>
@@ -86,7 +90,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
-				<button id="BotonEstudioInicio" name="BotonVerEstudio">Ver Estudio</button>
+				<button class="BotonEstudioInicio" name="0">Ver Catálogo</button>
 			</div>
 		</div>
 
@@ -99,7 +103,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
-				<button id="BotonEstudioInicio" name="BotonVerEstudio">Ver Estudio</button>
+				<button class="BotonEstudioInicio" name="1">Ver Catálogo</button>
 			</div>
 		</div>
 		<div class="elemento">
@@ -110,7 +114,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
-				<button id="BotonEstudioInicio" name="BotonVerEstudio">Ver Estudio</button>
+				<button class="BotonEstudioInicio" name="2">Ver Catálogo</button>
 			</div>
 			</div>
 
@@ -129,10 +133,10 @@
 		<label for="Name">sign up</label>
 		<br>
 		<br>
-		<input type="text" size="15" maxlength="30" value="Usuario" name="UsuarioInicio">
+		<input type="text" size="15" id="useruser" maxlength="30" value="Usuario" name="UsuarioInicio22">
 		<br>
 		<br>
-		<input type="text" size="15" maxlength="30" value="Contraseña" name="UsuarioContraseña">
+		<input type="text" size="15" id="ContraUser" maxlength="30" value="Contraseña" name="UsuarioContraseña22">
 		<br>
 		<br>
 		<label><input type="checkbox" id="cbox1" value="first_checkbox"> Recordar Contraseña</label><br>
@@ -141,7 +145,7 @@
 		<br>
 		<button  id="Olvidaste" class="button button5" name="Olvidaste">¿Olvidaste contraseña?</button>
 		<br>
-		<button id="BotonInicio" name="BotonInicio">Login</button>
+		<button id="BotonInicio" onclick="InicioSesion(useruser.value,ContraUser.value)" name="BotonInicio">Login</button>
 		<br>
 		<br>
 		<button id="BotonRegistro" class="button button5" name="Registro1">Sign up</button>
@@ -228,14 +232,16 @@
 
 
 </section>
-
+<!--DISEÑO -->
 <section id="Diseño" class="ocultar">
+		<button class="barra">☰</button>
 	<button id="atras5" class="volver" name="btnAtras"><</button>
 	<br>
 	<h1>Nombre Tatuaje</h1>
 	<br>
-	<img src="IMG/tatto1.png" alt="" class="logo">
-	<br>
+
+	<img src="IMG/OK.png"  id="DiseñoPrueba" alt=""  class="logo" onmouseout="CambiarSrc('DiseñoPrueba')">
+  <br>
 	<br>
 	<p>dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
 	<br>
@@ -251,11 +257,12 @@
 
 <!-- Reserva-->
 <section id="Reservar" class="ocultar">
+		<button class="barra">☰</button>
 	<button id="atras6" class="volver" name="btnAtras"><</button>
 	<br>
 	<h1>Nombre Tatuaje</h1>
 	<br>
-	<img src="IMG/tatto1.png" alt="" class="logo">
+	<img src="IMG/tatto1.png" id="DiseñoReserva" onmouseout="CambiarSrc('DiseñoReserva')" alt="" class="logo">
 	<br>
 	<br>
 	<p>dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
@@ -295,6 +302,7 @@
 
 
 </section>
+<!--Calendario-->
 
 	<section id="Calendario" class="ocultar">
 		<button id="atras9" class="volver" name="btnAtras"><</button>
@@ -311,6 +319,8 @@
 	</section>
 		<!-- BarraDesplegalbe-->
 	<section id="BarraDesplegable" class="ocultar">
+			<button id="atras8" class="volver" name="btnAtras"><</button>
+
 		<br>
 
 		<b>Menu</b>
