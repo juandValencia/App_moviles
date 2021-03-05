@@ -9,14 +9,25 @@ let idEnClick ,srcImagen;
 		crearReferencias();
 		agregarEventos();
 		setTimeout(()=>{IrA(Login);},1700);
-	
+
 	}
 	function actualizarVista(seccion, imagen,idBoton){
 		//CambiarSrc();
 		var element = $(imagen);
         element.src = traerImagen(idBoton);
         IrA($(seccion));
+				srcImagen=element.src
 	}
+	function guardarImagen(imagenId){
+
+	}
+	function actualizarVista2(seccion, imagen){
+		//CambiarSrc();
+		var element = $(imagen);
+				element.src = srcImagen;
+				IrA($(seccion));
+	}
+	functi
 	function crearReferencias(){
 
 		splash=document.getElementById("splash")
@@ -105,7 +116,7 @@ let idEnClick ,srcImagen;
 
 	function GuardarID(ideste){
 		idEnClick=ideste
-		srcImagen =traerImagen(idEnClick);
+
 	}
 
 	function traerImagen(idBoton){
