@@ -12,18 +12,18 @@ function css() {
    			.pipe(sass())
   			.pipe(cleanCSS())
   			.pipe(rename("main.init.css"))
-  			.pipe(dest("./css"));
+  			.pipe(dest("./bundle/css"));
 }
 function js(){
 	return src("./js¨/**/*.js");
 		.pipe(concat("main.mim.js"))
-		.pipe(dest("./css"))
+		.pipe(dest("./bundle/js"))
 }
 function sass(){
 	 return src("./sass/**/*.scss")
    			.pipe(sass())
    			.pipe(rename("main.init.css"))
-  			.pipe(dest("./css"));
+  			.pipe(dest("./bundle"));
 
 }
 
