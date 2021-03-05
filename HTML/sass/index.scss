@@ -1,0 +1,133 @@
+@use "div";
+@use "sections";
+@use "logo_imagenes";
+.bloqueflotante{
+  float:left;
+  width:90%;
+  height:100%;
+}
+.ocultar{
+   /* display: none;*/
+   display: none
+}
+
+h1.grande{
+    font-size:50px
+}
+.fuentapequña{
+  font-size: 63%;
+}
+
+body{
+  font-family:sans-serif;
+}
+
+table.pequeña{
+    border-style: solid;
+    background-size: contain;
+    width: 80%;
+    height: 80%
+}
+
+#splash{
+  background: LightSeaGreen;
+}
+#Registro{
+  background: #C4C4C4;
+}
+#juego{
+  background: violet;
+}
+#Diseño{
+  background: violet;
+}
+#Reservar{
+  background: violet;
+}
+#Whatsapp{
+  background: violet;
+}
+
+#ReservaExitosa{
+  background: Violet;
+}
+#Inicio{
+  background: #FF5733;
+}
+#Estudios{
+  background: #FF5733;
+}
+#instrucciones{
+  background: YellowGreen;
+}
+#creditos{
+  background: DeepSkyBlue;
+}
+#instrucciones p{
+  margin:25px;
+  text-align: left;
+}
+
+.boton{
+  background-color: Navy;
+
+  padding: 10px;
+  text-decoration: none;
+}
+.volver{
+float: left;
+color: pink;
+background-color: black;
+}
+.barra{
+  float: right;
+
+}
+
+.button5 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.barra{
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.barra:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.barra:active {
+	position:relative;
+	top:1px;
+}

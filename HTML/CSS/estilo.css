@@ -1,7 +1,7 @@
 /*Modifique el ancho luego pruebe en su celular*/
 
 div.calendario{
-    width:100;
+  width:100;
   height:100px;
   background.color: pink;
 }
@@ -31,7 +31,7 @@ justify-content: center;
 }
 .ocultar{
    /* display: none;*/
-display: none
+   display: none
 }
 
 h1.grande{
@@ -40,8 +40,6 @@ h1.grande{
 .fuentapequña{
   font-size: 63%;
 }
-
-/* 🚨 Estos estilos no se modifican para probar el ancho*/
 
 body{
   font-family:sans-serif;
@@ -105,16 +103,16 @@ div.calendario{
   background: #C4C4C4;
 }
 #juego{
-  background: Violet;
+  background: violet;
 }
 #Diseño{
-  background: Violet;
+  background: violet;
 }
 #Reservar{
-  background: Violet;
+  background: violet;
 }
 #Whatsapp{
-  background: Violet;
+  background: violet;
 }
 
 #ReservaExitosa{

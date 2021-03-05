@@ -1,0 +1,20 @@
+section{
+  width:310px;
+  height:450px;
+  text-align: center;
+  border-style: solid;
+border-color: black;
+ border-width:2px;
+
+
+}
+section.centrada{
+    width:310px;
+  height:450px;
+  text-align: center;
+  border-style: solid;
+border-color: black;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
