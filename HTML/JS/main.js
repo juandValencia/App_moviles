@@ -1,21 +1,21 @@
-var splash ,Inicio ,Login , Registro, EnvioCodigo,RestablecerContrasena,Diseños,Diseño,Barra ,Calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_RestablecerEnvioCodigo
-,btn_RestablecerRestablecerContrasena , btn_iraDiseno, btn_SiguienteReserva, btn_Reservar1, secciones;
-
-var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_InicioBarraDesplegable ,btn_CalendarioBarraDesplegable,btn_LogoutBarraDesplegable;
+var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,diseno,barra ,calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_restablecerenvioCodigo
+,btn_restablecerContrasena , btn_LogoutbarraDesplegable, btn_iraDiseno, reserva, btn_Siguientereserva, btn_iniciobarraDesplegable, btn_reservar1, btn_calendariobarraDesplegable;
+var secciones;
+var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen;
 
 
 	window.onload=()=>{
 		crearReferencias();
 		agregarEventos();
-		setTimeout(()=>{IrA(Login);},1700);
+		setTimeout(()=>{irA(login);},1700);
 
 	}
-	function actualizarVista(seccion, imagen,idBoton){
+	function actualizarVista(seccion, imagen,idboton){
 		//CambiarSrc();
 		var element = $(imagen);
-        element.src = traerImagen(idBoton);
-        IrA($(seccion));
+        element.src = traerImagen(idboton);
+        irA($(seccion));
 				srcImagen=element.src
 	}
 	function guardarImagen(imagenId){
@@ -25,44 +25,45 @@ let idEnClick ,srcImagen;
 		//CambiarSrc();
 		var element = $(imagen);
 				element.src = srcImagen;
-				IrA($(seccion));
+				irA($(seccion));
 	}
-	functi
+
 	function crearReferencias(){
 
 		splash=document.getElementById("splash")
-		Inicio=document.getElementById("Inicio");
-		Login=document.getElementById("Login");
-		EnvioCodigo=document.getElementById("EnvioCodigo");
-		Registro=document.getElementById("Registro");
-		RestablecerContrasena=document.getElementById("RestablecerContrasena");
-		Diseños=document.getElementById("Diseños");
-		Diseño=document.getElementById("Diseño");
-		Barra=document.getElementById("BarraDesplegable");
-		Reserva=document.getElementById("Reservar");
-		ReservaExitosa1=document.getElementById("ReservaExitosa");
-		Calendario=document.getElementById('Calendario');
+		inicio=document.getElementById("inicio");
+		login=document.getElementById("login");
+		envioCodigo=document.getElementById("envioCodigo");
+		registro=document.getElementById("registro");
+		restablecerContrasena=document.getElementById("restablecerContrasena");
+		disenos=document.getElementById("disenos");
+		diseno=document.getElementById("diseno");
+		barra=document.getElementById("barraDesplegable");
+		reserva=document.getElementById("reservar");
+		reservaExitosa1=document.getElementById("reservaExitosa");
+		calendario=document.getElementById('calendario');
 
 
-		btn_inicio=document.getElementById("BotonInicio");
-		btn_registro=document.getElementById("BotonRegistro");
-		btn_olvidocontra=document.getElementById("Olvidaste");
-		btn_restrarse=document.getElementById('BotonRegistoRegistro');
-		btn_RestablecerEnvioCodigo=document.getElementById("BotonRestablecerEnvioCodigo");
-		btn_RestablecerRestablecerContrasena=document.getElementById("BotonRestablecerRestablecerContrasena");
+		btn_inicio=document.getElementById("botoninicio");
+		btn_registro=document.getElementById("botonregistro");
+		btn_olvidocontra=document.getElementById("olvidaste");
+		btn_restrarse=document.getElementById('botonRegistoregistro');
+		btn_restablecerenvioCodigo=document.getElementById("botonrestablecerenvioCodigo");
+		btn_restablecerContrasena=document.getElementById("botonrestablecerrestablecerContrasena");
 		btnAtras=document.getElementsByClassName("volver");
 
 		btn_atras=document.getElementsByClassName("volver");
-		btn_verDiseno=document.getElementsByClassName("BotonEstudioInicio");
-		btn_iraDiseno=document.getElementsByClassName("BotonVerDieño");
-		btn_SiguienteReserva=document.getElementById("BotonSiguienteDiseño");
+		btn_verDiseno=document.getElementsByClassName("botonEstudioinicio");
+		btn_iraDiseno=document.getElementsByClassName("botonVerDieno");
+		btn_Siguientereserva=document.getElementById("botonSiguientediseno");
 		btn_barra=document.getElementsByClassName('barra');
-		btn_InicioBarraDesplegable=document.getElementById("BotonInicioBarraDesplegable");
-		btn_Reservar1=document.getElementById("BotonReservarReservar");
-		btn_CalendarioBarraDesplegable=document.getElementById('BotonCalendarioBarraDesplegable');
-		btn_LogoutBarraDesplegable=document.getElementById("BotonLogoutBarraDesplegable");
+		btn_iniciobarraDesplegable=document.getElementById("botoninicioBarraDesplegable");
+		btn_reservar1=document.getElementById("botonreservarreservar");
+		btn_calendariobarraDesplegable=document.getElementById('botoncalendarioBarraDesplegable');
+		btn_LogoutbarraDesplegable=document.getElementById("botonLogoutBarraDesplegable");
 
-		secciones=[splash,Inicio,Login,Registro,EnvioCodigo,RestablecerContrasena,Diseños,Diseño,Barra,Reserva,ReservaExitosa1,Calendario];
+		secciones=[splash,inicio,login,registro,envioCodigo,restablecerContrasena,disenos,diseno,barra,reserva,reservaExitosa1,calendario];
+		console.log(secciones)
 }
 
 	function ocultarsecciones(){
@@ -72,7 +73,7 @@ let idEnClick ,srcImagen;
 		}
 	}
 
-	function IrA(seccion){
+	function irA(seccion){
 
 		ocultarsecciones();
 		seccion.classList.remove("ocultar");
@@ -81,30 +82,30 @@ let idEnClick ,srcImagen;
 	}
 
 	function agregarEventos(){
-		btn_registro.addEventListener("click",()=>{IrA(Registro);});
-		btn_olvidocontra.addEventListener("click",()=>{IrA(EnvioCodigo);});
-		btn_restrarse.addEventListener("click",()=>{IrA(Login);})
-		btn_RestablecerEnvioCodigo.addEventListener("click",()=>{IrA(RestablecerContrasena);})
-		btn_RestablecerRestablecerContrasena.addEventListener("click",()=>{IrA(Login);})
-		btn_SiguienteReserva.addEventListener("click",()=>{IrA(Reserva);})
-		btn_InicioBarraDesplegable.addEventListener("click",()=>{IrA(Inicio);})
-		btn_CalendarioBarraDesplegable.addEventListener("click",()=>{IrA(Calendario);})
-		btn_Reservar1.addEventListener("click",()=>{IrA(ReservaExitosa1);})
-		btn_LogoutBarraDesplegable.addEventListener("click",()=>{IrA(Login);});
+		btn_registro.addEventListener("click",()=>{irA(registro);});
+		btn_olvidocontra.addEventListener("click",()=>{irA(envioCodigo);});
+		btn_restrarse.addEventListener("click",()=>{irA(login);})
+		btn_restablecerenvioCodigo.addEventListener("click",()=>{irA(restablecerContrasena);})
+		btn_restablecerContrasena.addEventListener("click",()=>{irA(login);})
+		btn_Siguientereserva.addEventListener("click",()=>{irA(reserva);})
+		btn_iniciobarraDesplegable.addEventListener("click",()=>{irA(inicio);})
+		btn_calendariobarraDesplegable.addEventListener("click",()=>{irA(calendario);})
+		btn_reservar1.addEventListener("click",()=>{irA(reservaExitosa1);})
+		btn_LogoutbarraDesplegable.addEventListener("click",()=>{irA(login);});
 
 		for (var i = 0; i < btnAtras.length; i++) {
-			btnAtras[i].addEventListener("click",()=>{IrA(seccionAnterior);});
+			btnAtras[i].addEventListener("click",()=>{irA(seccionAnterior);});
 	}
 		for (var i = 0; i < btn_verDiseno.length; i++) {
-		btn_verDiseno[i].addEventListener("click",()=>{IrA(Diseños);});
+		btn_verDiseno[i].addEventListener("click",()=>{irA(disenos);});
 		}
 
 		for (var i = 0; i < btn_iraDiseno.length; i++) {
-			btn_iraDiseno[i].addEventListener("click",()=>{IrA(Diseño);});
+			btn_iraDiseno[i].addEventListener("click",()=>{irA(diseno);});
 		}
 
 		for (var i = 0; i < btn_barra.length; i++) {
-			btn_barra[i].addEventListener("click",()=>{IrA(Barra);})
+			btn_barra[i].addEventListener("click",()=>{irA(barra);})
 		}
 
 }
@@ -119,18 +120,18 @@ let idEnClick ,srcImagen;
 
 	}
 
-	function traerImagen(idBoton){
+	function traerImagen(idboton){
 		var ImagenAtraer
-		if(idBoton==1){
+		if(idboton==1){
 
-				ImagenAtraer = "IMG/tatto1.png";
+				ImagenAtraer = "img/tatto1.png";
 		}
-		else if (idBoton==2){
+		else if (idboton==2){
 
-			ImagenAtraer = "IMG/tatto2.png";
+			ImagenAtraer = "img/tatto2.png";
 		}
 		else {
-			ImagenAtraer = "IMG/tatto3.png";
+			ImagenAtraer = "img/tatto3.png";
 		}
 		return ImagenAtraer
 	}
@@ -146,12 +147,12 @@ let idEnClick ,srcImagen;
             element.src = src;
         }
 
-	function InicioSesion(UsuarioEmpieza,ContraseñaUsuario){
+	function inicioSesion(UsuarioEmpieza,ContrasenaUsuario){
 				var usuarioQuemado="Admin"
 				var contraseQuemada="Admin"
 
-				if(UsuarioEmpieza==usuarioQuemado && contraseQuemada==ContraseñaUsuario){
-					btn_inicio.addEventListener("click",()=>{IrA(Inicio);});
+				if(UsuarioEmpieza==usuarioQuemado && contraseQuemada==ContrasenaUsuario){
+					btn_inicio.addEventListener("click",()=>{irA(inicio);});
 				}
 				else {
 						alert("Datos Incorrectos");
