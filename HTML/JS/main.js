@@ -1,4 +1,4 @@
-	var splash ,Inicio ,Login , Registro, EnvioCodigo,RestablecerContrasena,Diseños,Diseño,Barra ,Calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_RestablecerEnvioCodigo
+var splash ,Inicio ,Login , Registro, EnvioCodigo,RestablecerContrasena,Diseños,Diseño,Barra ,Calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_RestablecerEnvioCodigo
 ,btn_RestablecerRestablecerContrasena , btn_iraDiseno, btn_SiguienteReserva, btn_Reservar1, secciones;
 
 var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_InicioBarraDesplegable ,btn_CalendarioBarraDesplegable,btn_LogoutBarraDesplegable;
@@ -9,7 +9,13 @@ let idEnClick ,srcImagen;
 		crearReferencias();
 		agregarEventos();
 		setTimeout(()=>{IrA(Login);},1700);
-
+	
+	}
+	function actualizarVista(seccion, imagen,idBoton){
+		//CambiarSrc();
+		var element = $(imagen);
+        element.src = traerImagen(idBoton);
+        IrA($(seccion));
 	}
 	function crearReferencias(){
 
@@ -99,16 +105,16 @@ let idEnClick ,srcImagen;
 
 	function GuardarID(ideste){
 		idEnClick=ideste
-	srcImagen =traerImagen(idEnClick);
+		srcImagen =traerImagen(idEnClick);
 	}
 
 	function traerImagen(idBoton){
 		var ImagenAtraer
-		if(idBoton=="Diseño1"){
+		if(idBoton==1){
 
 				ImagenAtraer = "IMG/tatto1.png";
 		}
-		else if (idBoton=="Diseño2"){
+		else if (idBoton==2){
 
 			ImagenAtraer = "IMG/tatto2.png";
 		}
@@ -124,7 +130,7 @@ let idEnClick ,srcImagen;
 			 }
 	function CambiarSrc(element_id)
         {
-						var src =srcImagen;
+			var src =srcImagen;
             var element = $(element_id);
             element.src = src;
         }
