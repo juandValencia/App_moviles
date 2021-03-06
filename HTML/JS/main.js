@@ -9,6 +9,7 @@ let idEnClick ,srcImagen;
 		crearReferencias();
 		agregarEventos();
 		setTimeout(()=>{irA(login);},1700);
+		comprobarlocalstorage();
 
 	}
 	function actualizarVista(seccion, imagen,idboton){
@@ -157,4 +158,13 @@ let idEnClick ,srcImagen;
 				else {
 						alert("Datos Incorrectos");
 				}
+	}
+	function comprobarlocalstorage(){
+		if (typeof(Storage) !== "undefined") {
+    // LocalStorage disponible
+		console.log("disponible")
+} else {
+    // LocalStorage no soportado en este navegador
+}
+
 	}
