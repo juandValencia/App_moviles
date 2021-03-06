@@ -3,7 +3,8 @@ var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,d
 var secciones;
 var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen;
-
+localStorage.setItem("user", "Adm");
+localStorage.setItem("contra", "Adm");
 
 	window.onload=()=>{
 		crearReferencias();
@@ -167,4 +168,14 @@ let idEnClick ,srcImagen;
     // LocalStorage no soportado en este navegador
 }
 
+	}
+
+	function iniciosesionlocalstorage(user,contrasena){
+
+		if(user==localStorage.getItem("user")&&contrasena==localStorage.getItem("contra")){
+			btn_inicio.addEventListener("click",()=>{irA(inicio);});
+		}
+		else {
+			alert("Datos Incorrectos");
+		}
 	}
