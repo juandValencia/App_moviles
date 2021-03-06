@@ -1,6 +1,7 @@
 var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,diseno,barra ,calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_restablecerenvioCodigo
 ,btn_restablecerContrasena , btn_LogoutbarraDesplegable, btn_iraDiseno, reserva, btn_Siguientereserva, btn_iniciobarraDesplegable, btn_reservar1, btn_calendariobarraDesplegable;
 var secciones;
+let fechaSeparada;
 var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen;
 localStorage.setItem("user", "Adm");
@@ -196,4 +197,12 @@ localStorage.removeItem("contrasenaRegistrol");
 
 	function almacenarFecha(fecha){
 		localStorage.setItem("fechaAlmacenada",fecha)
+		separarFechaAlmacenada(fecha)
+	}
+	function separarFechaAlmacenada(fecha){
+		fechaSeparada=fecha.split("-")
+		localStorage.setItem("ano",fechaSeparada[0])
+		localStorage.setItem("mes",fechaSeparada[1])
+		localStorage.setItem("dia",fechaSeparada[2])
+
 	}
