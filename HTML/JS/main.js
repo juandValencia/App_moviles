@@ -193,3 +193,7 @@ localStorage.removeItem("contrasenaRegistrol");
 		localStorage.setItem("correoRegistrol", correoRegistro);
 		localStorage.setItem("contrasenaRegistrol", contrasenaRegistro);
 	}
+
+	function almacenarFecha(fecha){
+		localStorage.setItem("fechaAlmacenada",fecha)
+	}
