@@ -5,7 +5,10 @@ var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplega
 let idEnClick ,srcImagen;
 localStorage.setItem("user", "Adm");
 localStorage.setItem("contra", "Adm");
-
+localStorage.removeItem("nombreRegistrol");
+localStorage.removeItem("usuarioRegistrol");
+localStorage.removeItem("correoRegistrol");
+localStorage.removeItem("contrasenaRegistrol");
 	window.onload=()=>{
 		crearReferencias();
 		agregarEventos();
@@ -175,7 +178,18 @@ localStorage.setItem("contra", "Adm");
 		if(user==localStorage.getItem("user")&&contrasena==localStorage.getItem("contra")){
 			btn_inicio.addEventListener("click",()=>{irA(inicio);});
 		}
+		else if(user==localStorage.getItem("usuarioRegistrol")&&contrasena==localStorage.getItem("contrasenaRegistrol")) {
+			btn_inicio.addEventListener("click",()=>{irA(inicio);});
+		}
 		else {
 			alert("Datos Incorrectos");
 		}
+	}
+	function registarmeClick(nombreRegistro,usuarioRegistro,correoRegistro,contrasenaRegistro){
+
+
+		localStorage.setItem("nombreRegistrol", nombreRegistro);
+		localStorage.setItem("usuarioRegistrol", usuarioRegistro);
+		localStorage.setItem("correoRegistrol", correoRegistro);
+		localStorage.setItem("contrasenaRegistrol", contrasenaRegistro);
 	}

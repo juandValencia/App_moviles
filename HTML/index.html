@@ -160,21 +160,21 @@
 		<br>
 		<label for="Name">Sign up</label>
 		<br>
-		<input type="text" size="15" maxlength="30" placeholder="Nombre" name="nombre">
+		<input type="text" size="15" id="nombreRegistroregistro" maxlength="30" placeholder="Nombre" name="nombre">
 		<br>
 		<br>
-		<input type="text" size="15" maxlength="30" placeholder="Usuario" name="Usuario">
+		<input type="text" size="15"  id="usuarioRegistroRegistro" maxlength="30" placeholder="Usuario" name="Usuario">
 		<br>
 		<br>
-		<input type="text" size="15" maxlength="30" placeholder="Correo" name="Correo">
+		<input type="text" size="15" id="correoRegistroRegistro" maxlength="30" placeholder="Correo" name="Correo">
 		<br>
 		<br>
-		<input type="password" size="15" maxlength="30" placeholder="Contrasena" name="Contrasena">
+		<input type="password" size="15" id="passwordRegistroRegistro" maxlength="30" placeholder="Contrasena" name="Contrasena">
 		<br><br>
 		<input type="password" size="15" maxlength="30" placeholder="Repetir Contrasena" name="Rcontrasena">
 		<br>
 		<br>
-		<button id="botonRegistoregistro"  name="botonregistro">Registrarse</button>
+		<button id="botonRegistoregistro" onclick="registarmeClick(nombreRegistroregistro.value,usuarioRegistroRegistro.value,correoRegistroRegistro.value,passwordRegistroRegistro.value)"  name="botonregistro">Registrarse</button>
 		<br>
 	</section>
 
