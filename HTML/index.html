@@ -296,8 +296,8 @@
 	 	<h1>Mi cita</h1>
 		<br>
 		<div class="calendario">
-			<h1 class="grande">30</h1>
-			<p class="grande">Abril</p>
+			<h1 id="diaCalendario" class="grande" text="30">30</h1>
+			<p id="mesCalendario" class="grande" text="Abril">Abril</p>
 		</div>
 		<br>
 	</section>
@@ -312,7 +312,7 @@
 		<button id="botoninicioBarraDesplegable" class="button button5" name="inicio1">inicio</button>
 		<br>
 		<br>
-		<button id="botoncalendarioBarraDesplegable" class="button button5" name="calendario1">calendario</button>
+		<button id="botoncalendarioBarraDesplegable" onclick="actualizarCalendarioDia('calendario','diaCalendario','mesCalendario');" class="button button5" name="calendario1">calendario</button>
 		<br>
 		<br>
 		<button id="botonContactanosBarraDesplegable" class="button button5"  name="Contactanos1">Contactanos</button>

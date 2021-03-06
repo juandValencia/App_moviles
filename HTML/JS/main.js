@@ -95,7 +95,6 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_restablecerContrasena.addEventListener("click",()=>{irA(login);})
 		btn_Siguientereserva.addEventListener("click",()=>{irA(reserva);})
 		btn_iniciobarraDesplegable.addEventListener("click",()=>{irA(inicio);})
-		btn_calendariobarraDesplegable.addEventListener("click",()=>{irA(calendario);})
 		btn_reservar1.addEventListener("click",()=>{irA(reservaExitosa1);})
 		btn_LogoutbarraDesplegable.addEventListener("click",()=>{irA(login);});
 
@@ -204,5 +203,18 @@ localStorage.removeItem("contrasenaRegistrol");
 		localStorage.setItem("ano",fechaSeparada[0])
 		localStorage.setItem("mes",fechaSeparada[1])
 		localStorage.setItem("dia",fechaSeparada[2])
+
+	}
+	function actualizarCalendarioDia(seccion, imagenDia, imagenMes){
+		//CambiarSrc();
+		var element = $(imagenDia);
+				element.innerHTML = localStorage.getItem("dia");
+				actualizarCalendarioMes(seccion,imagenMes)
+				irA($(seccion))
+	}
+	function actualizarCalendarioMes(seccion, imagen){
+		//CambiarSrc();
+		var element = $(imagen);
+				element.innerHTML = localStorage.getItem("mes");
 
 	}
