@@ -201,7 +201,42 @@ localStorage.removeItem("contrasenaRegistrol");
 	function separarFechaAlmacenada(fecha){
 		fechaSeparada=fecha.split("-")
 		localStorage.setItem("ano",fechaSeparada[0])
-		localStorage.setItem("mes",fechaSeparada[1])
+		if(fechaSeparada[1]=="01"){
+			localStorage.setItem("mes","enero")
+		}
+		else if(fechaSeparada[1]=="02"){
+			localStorage.setItem("mes","febrero")
+		}
+		else if(fechaSeparada[1]=="03"){
+			localStorage.setItem("mes","marzo")
+		}
+		else if(fechaSeparada[1]=="04"){
+			localStorage.setItem("mes","abril")
+		}
+		else if(fechaSeparada[1]=="05"){
+			localStorage.setItem("mes","mayo")
+		}
+		else if(fechaSeparada[1]=="06"){
+			localStorage.setItem("mes","junio")
+		}
+		else if(fechaSeparada[1]=="07"){
+			localStorage.setItem("mes","julio")
+		}
+		else if(fechaSeparada[1]=="08"){
+			localStorage.setItem("mes","agosto")
+		}
+		else if(fechaSeparada[1]=="09"){
+			localStorage.setItem("mes","septiembre")
+		}
+		else if(fechaSeparada[1]=="10"){
+			localStorage.setItem("mes","octubre")
+		}
+		else if(fechaSeparada[1]=="11"){
+			localStorage.setItem("mes","noviembre")
+		}
+		else if(fechaSeparada[1]=="12"){
+			localStorage.setItem("mes","diciembre")
+		}
 		localStorage.setItem("dia",fechaSeparada[2])
 
 	}
@@ -215,6 +250,7 @@ localStorage.removeItem("contrasenaRegistrol");
 	function actualizarCalendarioMes(seccion, imagen){
 		//CambiarSrc();
 		var element = $(imagen);
+
 				element.innerHTML = localStorage.getItem("mes");
 
 	}
