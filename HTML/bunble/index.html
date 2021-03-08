@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	 <link rel="stylesheet" type="text/css" href="CSS/main.css">
+	 <script type="text/javascript" src="JS/main.js"></script>
+	<title>Single App ejemplo</title>
+
+<!--	<style type="text/css">
+
+</style> -->
+
+</head>
+<body>
+
+	<!--Splash-->
+
+	<section  id="splash"  >
+
+		<div class="centrada">
+			<img src="IMG/logo.png" class="logoMedio">
+		</div>
+	</section>
+	<!-- Diseños -->
+<section id="Diseños" class="ocultar">
+		<button class="barra">☰</button>
+	<button id="atras1" class="volver" name="btnAtras"><</button>
+	<br>
+	<div><h4>Diseños</h4></div>
+		<br>
+		<br>
+		<div class="lista">
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Diseño</p>
+				<img src="IMG/tatto1.png" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button id="Diseño1"  onclick="actualizarVista('Diseño','DiseñoPrueba',1);">Ver Diseño</button>
+			</div>
+		</div>
+
+
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Diseño</p>
+				<img src="IMG/tatto2.png" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button id="Diseño2" onclick="actualizarVista('Diseño','DiseñoPrueba',2);">Ver Diseño</button>
+			</div>
+		</div>
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Diseño</p>
+				<img src="IMG/tatto3.png" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button id="Diseño3" onclick="actualizarVista('Diseño','DiseñoPrueba',3);">Ver Diseño</button>
+			</div>
+			</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- Inicio --->
+<section id="Inicio" class="ocultar">
+	<button class="barra">☰</button>
+
+	<div><h4>Estudios</h4></div>
+		<br>
+		<br>
+		<div class="lista">
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Estudio</p>
+				<img src="IMG/estudio1.jpg" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button class="BotonEstudioInicio" name="0">Ver Catálogo</button>
+			</div>
+		</div>
+
+
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Estudio</p>
+				<img src="IMG/estudio2.jpg" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button class="BotonEstudioInicio" name="1">Ver Catálogo</button>
+			</div>
+		</div>
+		<div class="elemento">
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Nombre Estudio</p>
+				<img src="IMG/estudio3.jpg" class="imagenpequena">
+			</div>
+
+			<div class="bloqueflotante">
+				<p class="fuentapequña">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates</p>
+				<button class="BotonEstudioInicio" name="2">Ver Catálogo</button>
+			</div>
+			</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</section>
+	<!-- Login -->
+	<section id="Login" class="ocultar">
+
+		<br>
+		<img src="IMG/logo.png" alt="" class="logo">
+		<br>
+		<label for="Name">sign up</label>
+		<br>
+		<br>
+		<input type="text" size="15" id="useruser" maxlength="30" value="Usuario" name="UsuarioInicio22">
+		<br>
+		<br>
+		<input type="text" size="15" id="ContraUser" maxlength="30" value="Contraseña" name="UsuarioContraseña22">
+		<br>
+		<br>
+		<label><input type="checkbox" id="cbox1" value="first_checkbox"> Recordar Contraseña</label><br>
+		<br>
+
+		<button  id="Olvidaste" class="button button5" name="Olvidaste">¿Olvidaste contraseña?</button>
+		<br>
+		<button id="BotonInicio" onclick="InicioSesion(useruser.value,ContraUser.value)" name="BotonInicio">Login</button>
+		<br>
+		<button id="BotonRegistro" class="button button5" name="Registro1">Sign up</button>
+		<br>
+
+	</section>
+	<!-- Registro -->
+	<section id="Registro" class="ocultar">
+		<button id="atras2" class="volver" name="btnAtras"><</button>
+		<br>
+		<h1>Registro</h1>
+		<img src="IMG/logo.png" alt="" class="logo">
+		<br>
+		<label for="Name">Sign up</label>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Nombre" name="nombre">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Usuario" name="Usuario">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Correo" name="Correo">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Contraseña" name="Contraseña">
+		<br><br>
+		<input type="text" size="15" maxlength="30" value="Repetir Contraseña" name="Rcontraseña">
+		<br>
+		<br>
+		<button id="BotonRegistoRegistro"  name="BotonRegistro">Registrarse</button>
+		<br>
+	</section>
+
+	<!-- EnvioCodigo -->
+	<section id="EnvioCodigo" class="ocultar">
+		<button id="atras3" class="volver" name="btnAtras"><</button>
+		<br>
+	 	<img src="IMG/logo.png" alt="" class="logo">
+		<br>
+		<input type="text" size="15" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Ingrese codigo" name="Codigo1">
+		<br>
+		<br>
+		<div>
+
+			<button class="button button5" name="ReenviarCodigo">Reenviar Codigo</button>
+			</div>
+			<div>
+			<button id="BotonRestablecerEnvioCodigo" name="BotonRestablecer">Restablecer</button>
+			<br>
+	</section>
+
+
+
+		<!-- REstablecer COntraseña -->
+	<section id="RestablecerContrasena" class="ocultar">
+		<button id="atras4" class="volver" name="btnAtras1"><</button>
+
+		<br>
+
+		<h1>juanpepito@correo.com</h1>
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Nueva contraseña" name="NuevaContraseña1">
+		<br>
+		<br>
+		<input type="text" size="15" maxlength="30" value="Repetir contraeña" name="RepetirContra1">
+		<br>
+		<br>
+		<button id="BotonRestablecerRestablecerContrasena" name="BotonRestablecer2">Restablecer</button>
+		<br>
+	</section>
+</section>
+
+<!--DISEÑO -->
+<section id="Diseño" class="ocultar">
+		<button class="barra">☰</button>
+	<button id="atras5" class="volver" name="btnAtras"><</button>
+	<br>
+	<h1>Nombre Tatuaje</h1>
+	<br>
+
+	<img src="IMG/OK.png"  id="DiseñoPrueba" alt=""  class="logo" >
+  <br>
+	<br>
+	<p>dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
+	<br>
+  <u>($)</u>	<input type="text" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
+	<br>
+  <u>(*)</u>	<input type="text" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+	<br>
+	<u>(._.)</u> <input type="text" size="15" maxlength="30" value="juanito xd" name="Nombre tatuador" readonly>
+	<br>
+	<button id="BotonSiguienteDiseño" name="Siguiente">Siguiente</button>
+
+</section>
+
+<!-- Reserva-->
+<section id="Reservar" class="ocultar">
+		<button class="barra">☰</button>
+	<button id="atras6" class="volver" name="btnAtras"><</button>
+	<br>
+	<h1>Nombre Tatuaje</h1>
+	<br>
+	<img src="IMG/tatto1.png" id="DiseñoReserva" onclick="CambiarSrc('DiseñoReserva')" alt="" class="logo">
+	<br>
+	<br>
+	<p>dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
+	<br>
+  <u>($)</u>	<input type="text" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
+	<br>
+  <u>(*)</u>	<input type="text" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+	<br>
+	<u>fecha</u>	<input type="text" size="15" maxlength="30" value="23-12-2131" name="fechaReserva" readonly>
+	<br>
+	<u>tamaño</u>	<input type="text" size="15" maxlength="30" value="25 cm" name="tamañoTatu" readonly>
+	<br>
+	<button id="BotonReservarReservar" name="ReservarTatu">Reservar</button>
+
+</section>
+
+	<!-- notficacion -->
+<section id="ReservaExitosa" class="ocultar">
+	<button id="atras7" class="volver" name="btnAtras"><</button>
+	<br>
+	<img src="IMG/OK.png" alt="" class="logo">
+	<br>
+	<br>
+	<u>Reserva exitosa</u>
+	<br>
+</section>
+
+<section id="Whatsapp" class="ocultar">
+	<button id="atras8" class="volver" name="btnAtras"><</button>
+	<br>
+	<img src="IMG/wpp.png" alt="" class="logo">
+	<br>
+	<br>
+	<u>Reserva exitosa</u>
+	<br>
+</section>
+<!--Calendario-->
+
+	<section id="Calendario" class="ocultar">
+		<button id="atras9" class="volver" name="btnAtras"><</button>
+		<br>
+	 	<h1>Mi cita</h1>
+		<br>
+		<div class="calendario">
+			<h1 class="grande">30</h1>
+			<p class="grande">Abril</p>
+		</div>
+		<br>
+	</section>
+
+		<!-- BarraDesplegalbe-->
+	<section id="BarraDesplegable" class="ocultar">
+			<button id="atras8" class="volver" name="btnAtras"><</button>
+		<br>
+		<b>Menu</b>
+		<br>
+		<br>
+		<button id="BotonInicioBarraDesplegable" class="button button5" name="Inicio1">inicio</button>
+		<br>
+		<br>
+		<button id="BotonCalendarioBarraDesplegable" class="button button5" name="Calendario1">Calendario</button>
+		<br>
+		<br>
+		<button id="BotonContactanosBarraDesplegable" class="button button5"  name="Contactanos1">Contactanos</button>
+		<br>
+		<br>
+		<button id="BotonLogoutBarraDesplegable" name="Logout">Log out</button>
+	</section>
+</body>
+
+</html>
