@@ -91,13 +91,6 @@ body {
   font-family: sans-serif;
 }
 
-table.pequeña {
-  border-style: solid;
-  background-size: contain;
-  width: 80%;
-  height: 80%;
-}
-
 #splash {
   background: LightSeaGreen;
 }
