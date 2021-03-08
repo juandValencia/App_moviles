@@ -2,8 +2,33 @@ var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,d
 ,btn_restablecerContrasena , btn_LogoutbarraDesplegable, btn_iraDiseno, reserva, btn_Siguientereserva, btn_iniciobarraDesplegable, btn_reservar1, btn_calendariobarraDesplegable;
 var secciones;
 let fechaSeparada;
-var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
+var seccionActual ,seccionNavegacion,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen;
+
+
+	function irAtras(seccion){
+
+		ocultarsecciones();
+		seccion.classList.remove("ocultar");
+		seccionAnterior=seccionActual;
+		seccionActual=seccion;
+	}
+	function irA(seccion){
+
+		ocultarsecciones();
+
+		seccion.classList.remove("ocultar");
+		for(i in seccionNavegacion){
+		
+			if(seccion==seccionNavegacion[i]){
+				seccionAnterior=seccionNavegacion[i-1]
+				
+				break
+			}
+
+		}
+
+	}
 localStorage.setItem("user", "Adm");
 localStorage.setItem("contra", "Adm");
 localStorage.removeItem("nombreRegistrol");
@@ -70,6 +95,7 @@ localStorage.removeItem("contrasenaRegistrol");
 
 		secciones=[splash,inicio,login,registro,envioCodigo,restablecerContrasena,disenos,diseno,barra,reserva,reservaExitosa1,calendario];
 		console.log(secciones)
+		seccionNavegacion=[login,envioCodigo,restablecerContrasena,login,registro,inicio,disenos,diseno,reserva,reservaExitosa1,barra,calendario];
 }
 
 	function ocultarsecciones(){
@@ -79,13 +105,17 @@ localStorage.removeItem("contrasenaRegistrol");
 		}
 	}
 
-	function irA(seccion){
+		function irAtras(seccionActual){
+				for (i in seccionNavegacion) {
+						if (seccionActual==seccionNavegacion[i]) {
+							irA(seccionNavegacion[i-1])
+						}
+				}
 
-		ocultarsecciones();
-		seccion.classList.remove("ocultar");
-		seccionAnterior=seccionActual;
-		seccionActual=seccion;
-	}
+		}
+
+
+
 
 	function agregarEventos(){
 		btn_registro.addEventListener("click",()=>{irA(registro);});
