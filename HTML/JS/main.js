@@ -3,7 +3,7 @@ var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,d
 var secciones ,btnAtrasBarra,btn_atras1;
 let fechaSeparada;
 var seccionActual ,seccionNavegacion,seccionAnterior ,seccionActual1,seccionAnterior1,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
-let idEnClick ,srcImagen;
+let idEnClick ,srcImagen, precioTatuaje, nombreTatuaje, descripcionTatuaje;
 
 
 
@@ -45,6 +45,27 @@ localStorage.removeItem("contrasenaRegistrol");
         element.src = traerImagen(idboton);
         irA($(seccion));
 				srcImagen=element.src
+				console.log(srcImagen)
+				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto1.png"){
+					precioTatuaje="200.000 $"
+					nombreTatuaje="king skull"
+					descripcionTatuaje="Calavera realista con corona color negro enfocada diagonalmente"
+					console.log(precioTatuaje)
+					console.log(nombreTatuaje)
+					console.log(descripcionTatuaje)
+				}
+				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto2.png"){
+					console.log("imagen2")
+					precioTatuaje="150.000 $"
+					nombreTatuaje="Dragon serpiente"
+					descripcionTatuaje="Dragon estilo serpiente color negro en su totalidad"
+				}
+				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto3.png"){
+					console.log("imagen3")
+					precioTatuaje="300.000 $"
+					nombreTatuaje="Calavera trival"
+					descripcionTatuaje="Calavera tipo trival enfocada frontalmente con colores negros"
+				}
 	}
 	function guardarImagen(imagenId){
 
