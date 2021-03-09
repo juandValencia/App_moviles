@@ -76,7 +76,7 @@ section.centrada {
 
 .ocultar {
   /* display: none;*/
-  
+  display: none;
 }
 
 h1.grande {
@@ -147,6 +147,11 @@ body {
 }
 
 .volver {
+  float: left;
+  color: pink;
+  background-color: black;
+}
+.volver2 {
   float: left;
   color: pink;
   background-color: black;
