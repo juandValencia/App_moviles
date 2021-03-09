@@ -1,9 +1,31 @@
 var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,diseno,barra ,calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_restablecerenvioCodigo
 ,btn_restablecerContrasena , btn_LogoutbarraDesplegable, btn_iraDiseno, reserva, btn_Siguientereserva, btn_iniciobarraDesplegable, btn_reservar1, btn_calendariobarraDesplegable;
-var secciones;
+var secciones ,btnAtrasBarra,btn_atras1;
 let fechaSeparada;
-var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
+var seccionActual ,seccionNavegacion,seccionAnterior ,seccionActual1,seccionAnterior1,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen;
+
+
+
+	function irA(seccion){
+
+		ocultarsecciones();
+
+		seccion.classList.remove("ocultar");
+		for(i in seccionNavegacion){
+
+			if(seccion==seccionNavegacion[i]){
+				seccionAnterior=seccionNavegacion[i-1]
+
+				break
+			}
+		}
+		seccionAnterior1=seccionActual1;
+		seccionActual1=seccion;
+
+
+
+}
 localStorage.setItem("user", "Adm");
 localStorage.setItem("contra", "Adm");
 localStorage.removeItem("nombreRegistrol");
@@ -67,9 +89,12 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_reservar1=document.getElementById("botonreservarreservar");
 		btn_calendariobarraDesplegable=document.getElementById('botoncalendarioBarraDesplegable');
 		btn_LogoutbarraDesplegable=document.getElementById("botonLogoutBarraDesplegable");
+		btnAtrasBarra=document.getElementById('atrasBarra');
+		btn_atras1=document.getElementsByClassName("volver2");
 
 		secciones=[splash,inicio,login,registro,envioCodigo,restablecerContrasena,disenos,diseno,barra,reserva,reservaExitosa1,calendario];
 		console.log(secciones)
+		seccionNavegacion=[login,envioCodigo,restablecerContrasena,login,registro,inicio,disenos,diseno,reserva,reservaExitosa1,inicio,calendario];
 }
 
 	function ocultarsecciones(){
@@ -79,13 +104,10 @@ localStorage.removeItem("contrasenaRegistrol");
 		}
 	}
 
-	function irA(seccion){
 
-		ocultarsecciones();
-		seccion.classList.remove("ocultar");
-		seccionAnterior=seccionActual;
-		seccionActual=seccion;
-	}
+
+
+
 
 	function agregarEventos(){
 		btn_registro.addEventListener("click",()=>{irA(registro);});
@@ -97,6 +119,8 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_iniciobarraDesplegable.addEventListener("click",()=>{irA(inicio);})
 		btn_reservar1.addEventListener("click",()=>{irA(reservaExitosa1);})
 		btn_LogoutbarraDesplegable.addEventListener("click",()=>{irA(login);});
+
+
 
 		for (var i = 0; i < btnAtras.length; i++) {
 			btnAtras[i].addEventListener("click",()=>{irA(seccionAnterior);});
@@ -111,6 +135,9 @@ localStorage.removeItem("contrasenaRegistrol");
 
 		for (var i = 0; i < btn_barra.length; i++) {
 			btn_barra[i].addEventListener("click",()=>{irA(barra);})
+		}
+		for (var i = 0; i < btn_atras1.length; i++) {
+			btn_atras1[i].addEventListener("click",()=>{irA(seccionAnterior1);})
 		}
 
 }
