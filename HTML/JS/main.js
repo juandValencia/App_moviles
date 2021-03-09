@@ -81,14 +81,14 @@ localStorage.removeItem("contrasenaRegistrol");
 	function guardarImagen(imagenId){
 
 	}
-	function actualizarVista2(seccion, imagen,idPrecioTatuaje,idNombreTatuaje,idDescripcionTatuaje){
+	function actualizarVista2(seccion, imagen,idPrecioTatuaje,idNombreTatuaje,idDescripcionTatuaje,idDireccion){
 		//CambiarSrc();
 		var element = $(imagen);
 				element.src = srcImagen;
 				actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 				actualizarNombretatuaje(seccion,idNombreTatuaje)
 				actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
-
+				actualizarDireccion(seccion,idDireccion)
 				irA($(seccion));
 
 	}
