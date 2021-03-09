@@ -1,8 +1,8 @@
 var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,diseno,barra ,calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_restablecerenvioCodigo
-,btn_restablecerContrasena , btn_atras1, btn_LogoutbarraDesplegable, btn_iraDiseno, reserva, btn_Siguientereserva, btn_iniciobarraDesplegable, btn_reservar1, btn_calendariobarraDesplegable;
+,btn_restablecerContrasena , btn_LogoutbarraDesplegable, btn_iraDiseno, reserva, btn_Siguientereserva, btn_iniciobarraDesplegable, btn_reservar1, btn_calendariobarraDesplegable;
 var secciones;
 let fechaSeparada;
-var seccionActual ,seccionAnterior, seccionActual1,seccionAnterior1, btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
+var seccionActual ,seccionAnterior,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen;
 localStorage.setItem("user", "Adm");
 localStorage.setItem("contra", "Adm");
@@ -58,7 +58,7 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_restablecerContrasena=document.getElementById("botonrestablecerrestablecerContrasena");
 		btnAtras=document.getElementsByClassName("volver");
 
-		btn_atras1=document.getElementsByClassName("volver2");
+		btn_atras=document.getElementsByClassName("volver");
 		btn_verDiseno=document.getElementsByClassName("botonEstudioinicio");
 		btn_iraDiseno=document.getElementsByClassName("botonVerDieno");
 		btn_Siguientereserva=document.getElementById("botonSiguientediseno");
@@ -69,7 +69,7 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_LogoutbarraDesplegable=document.getElementById("botonLogoutBarraDesplegable");
 
 		secciones=[splash,inicio,login,registro,envioCodigo,restablecerContrasena,disenos,diseno,barra,reserva,reservaExitosa1,calendario];
-		seccionNavegacion=[login,envioCodigo,restablecerContrasena,login,registro,inicio,disenos,diseno,reserva,reservaExitosa1,inicio,calendario]
+		console.log(secciones)
 }
 
 	function ocultarsecciones(){
@@ -82,20 +82,9 @@ localStorage.removeItem("contrasenaRegistrol");
 	function irA(seccion){
 
 		ocultarsecciones();
-
 		seccion.classList.remove("ocultar");
-		for(i in seccionNavegacion){
-			console.log(i)
-			if(seccion==seccionNavegacion[i]){
-				seccionAnterior=seccionNavegacion[i-1]
-				console.log(seccionAnterior)
-				break
-			}
-
-		}
-		seccionAnterior1=seccionActual1;
-		seccionActual1=seccion;
-
+		seccionAnterior=seccionActual;
+		seccionActual=seccion;
 	}
 
 	function agregarEventos(){
@@ -109,15 +98,9 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_reservar1.addEventListener("click",()=>{irA(reservaExitosa1);})
 		btn_LogoutbarraDesplegable.addEventListener("click",()=>{irA(login);});
 
-
 		for (var i = 0; i < btnAtras.length; i++) {
 			btnAtras[i].addEventListener("click",()=>{irA(seccionAnterior);});
 	}
-	for (var i = 0; i < btn_atras1.length; i++) {
-		btn_atras1[i].addEventListener("click",()=>{irA(seccionAnterior1);});
-}
-
-
 		for (var i = 0; i < btn_verDiseno.length; i++) {
 		btn_verDiseno[i].addEventListener("click",()=>{irA(disenos);});
 		}
