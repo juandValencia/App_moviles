@@ -3,7 +3,7 @@ var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,d
 var secciones ,btnAtrasBarra,btn_atras1;
 let fechaSeparada;
 var seccionActual ,seccionNavegacion,seccionAnterior ,seccionActual1,seccionAnterior1,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
-let idEnClick ,srcImagen, precioTatuaje, nombreTatuaje, descripcionTatuaje;
+let idEnClick ,srcImagen, precioTatuaje, nombreTatuaje, descripcionTatuaje, idMapa;
 
 
 
@@ -39,12 +39,12 @@ localStorage.removeItem("contrasenaRegistrol");
 		comprobarlocalstorage();
 
 	}
-	function actualizarVista(seccion, imagen,idboton,idNombreTatuaje,idPrecioTatuaje,idDescripcionTatuaje){
+	function actualizarVista(seccion, imagen,idboton,idNombreTatuaje,idPrecioTatuaje,idDescripcionTatuaje,idDireccion){
 		//CambiarSrc();
 		var element = $(imagen);
         element.src = traerImagen(idboton);
 				srcImagen=element.src
-			
+
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto1.png"){
 					precioTatuaje="200.000 $"
 					nombreTatuaje="king skull"
@@ -53,6 +53,7 @@ localStorage.removeItem("contrasenaRegistrol");
 					actualizarNombretatuaje(seccion,idNombreTatuaje)
 					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
+					actualizarDireccion(seccion,idDireccion)
 				}
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto2.png"){
 
@@ -62,6 +63,7 @@ localStorage.removeItem("contrasenaRegistrol");
 					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 					actualizarNombretatuaje(seccion,idNombreTatuaje)
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
+					actualizarDireccion(seccion,idDireccion)
 				}
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto3.png"){
 
@@ -71,6 +73,7 @@ localStorage.removeItem("contrasenaRegistrol");
 					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 					actualizarNombretatuaje(seccion,idNombreTatuaje)
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
+					actualizarDireccion(seccion,idDireccion)
 				}
 
 				irA($(seccion));
@@ -200,6 +203,11 @@ localStorage.removeItem("contrasenaRegistrol");
 			ImagenAtraer = "img/tatto3.png";
 		}
 		return ImagenAtraer
+	}
+	function guardarIDBoton(ideste){
+		idMapa=ideste
+		console.log(idMapa)
+
 	}
 
 	function $(element_id)
@@ -334,5 +342,20 @@ localStorage.removeItem("contrasenaRegistrol");
 		var elementDescripcion = $(descripcion);
 
 			elementDescripcion.innerHTML = descripcionTatuaje;
+
+	}
+	function actualizarDireccion(seccion, direccion){
+		//CambiarSrc();
+		var elementdireccion = $(direccion);
+
+			if(idMapa=="dir1"){
+				elementdireccion.value="calle 1 #23-12"
+			}
+			if(idMapa=="dir2"){
+				elementdireccion.value="calle 306 #23 diagonal"
+			}
+			if(idMapa=="dir3"){
+				elementdireccion.value="calle 101 carrera 15 #102-16"
+			}
 
 	}

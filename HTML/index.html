@@ -40,7 +40,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">calavera realista con corona color negro enfocada diagonalmente</p>
-				<button id="diseno1"  onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseno</button>
+				<button id="diseno1"  onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseno</button>
 			</div>
 		</div>
 
@@ -53,7 +53,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">Dragon estilo serpiente color negro en su totalidad</p>
-				<button id="diseno2" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseno</button>
+				<button id="diseno2" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseno</button>
 			</div>
 		</div>
 		<div class="elemento">
@@ -64,7 +64,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">Calavera tipo trival enfocada frontalmente con colores negros</p>
-				<button id="diseno3" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseno</button>
+				<button id="diseno3" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseno</button>
 			</div>
 			</div>
 
@@ -91,7 +91,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">sede principal y original de nuestros estudios de tatuaje</p>
-				<button class="botonEstudioinicio" name="0">Ver Catálogo</button>
+				<button id="dir1" onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="0">Ver Catálogo</button>
 			</div>
 		</div>
 
@@ -104,7 +104,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">primera sucursal de nuestras sedes de tatuaje</p>
-				<button class="botonEstudioinicio" name="1">Ver Catálogo</button>
+				<button id="dir2"  onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="1">Ver Catálogo</button>
 			</div>
 		</div>
 		<div class="elemento">
@@ -115,7 +115,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">Segunda sucursal de nuestras sedes de tatuaje</p>
-				<button class="botonEstudioinicio" name="2">Ver Catálogo</button>
+				<button id="dir3" onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="2">Ver Catálogo</button>
 			</div>
 			</div>
 
@@ -236,7 +236,7 @@
 	<br>
   <u>($)</u>	<input type="text" id="precioDiseno" size="15" maxlength="30" value="$$$$$$$" name="$$$$$">
 	<br>
-  <u>(*)</u>	<input type="text"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+  <u>(*)</u>	<input type="text" id="direccionDiseno"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
 	<br>
 	<u>(._.)</u> <input type="text" size="15" maxlength="30" value="juanito xd" name="Nombre tatuador" readonly>
 	<br>
