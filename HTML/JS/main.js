@@ -39,11 +39,10 @@ localStorage.removeItem("contrasenaRegistrol");
 		comprobarlocalstorage();
 
 	}
-	function actualizarVista(seccion, imagen,idboton){
+	function actualizarVista(seccion, imagen,idboton,idNombreTatuaje,idPrecioTatuaje,idDescripcionTatuaje){
 		//CambiarSrc();
 		var element = $(imagen);
         element.src = traerImagen(idboton);
-        irA($(seccion));
 				srcImagen=element.src
 				console.log(srcImagen)
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto1.png"){
@@ -53,19 +52,30 @@ localStorage.removeItem("contrasenaRegistrol");
 					console.log(precioTatuaje)
 					console.log(nombreTatuaje)
 					console.log(descripcionTatuaje)
+					actualizarNombretatuaje(seccion,idNombreTatuaje)
+					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
+					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
 				}
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto2.png"){
 					console.log("imagen2")
 					precioTatuaje="150.000 $"
 					nombreTatuaje="Dragon serpiente"
 					descripcionTatuaje="Dragon estilo serpiente color negro en su totalidad"
+					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
+					actualizarNombretatuaje(seccion,idNombreTatuaje)
+					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
 				}
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto3.png"){
 					console.log("imagen3")
 					precioTatuaje="300.000 $"
 					nombreTatuaje="Calavera trival"
 					descripcionTatuaje="Calavera tipo trival enfocada frontalmente con colores negros"
+					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
+					actualizarNombretatuaje(seccion,idNombreTatuaje)
+					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
 				}
+
+				irA($(seccion));
 	}
 	function guardarImagen(imagenId){
 
@@ -300,5 +310,26 @@ localStorage.removeItem("contrasenaRegistrol");
 		var element = $(imagen);
 
 				element.innerHTML = localStorage.getItem("mes");
+
+	}
+	function actualizarPreciotatuaje(seccion, precio){
+		//CambiarSrc();
+		var elementprecio = $(precio);
+
+				elementprecio.value = precioTatuaje;
+
+	}
+	function actualizarNombretatuaje(seccion, nombre){
+		//CambiarSrc();
+		var elementNombre = $(nombre);
+
+				elementNombre.innerHTML = nombreTatuaje;
+
+	}
+	function actualizarDescipciontatuaje(seccion, descripcion){
+		//CambiarSrc();
+		var elementDescripcion = $(descripcion);
+
+			elementDescripcion.innerHTML = descripcionTatuaje;
 
 	}

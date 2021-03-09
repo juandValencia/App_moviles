@@ -40,7 +40,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">calavera realista con corona color negro enfocada diagonalmente</p>
-				<button id="diseno1"  onclick="actualizarVista('diseno','disenoPrueba',1);"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseno</button>
+				<button id="diseno1"  onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseno</button>
 			</div>
 		</div>
 
@@ -53,7 +53,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">Dragon estilo serpiente color negro en su totalidad</p>
-				<button id="diseno2" onclick="actualizarVista('diseno','disenoPrueba',2);" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseno</button>
+				<button id="diseno2" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseno</button>
 			</div>
 		</div>
 		<div class="elemento">
@@ -64,7 +64,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentapequna">Calavera tipo trival enfocada frontalmente con colores negros</p>
-				<button id="diseno3" onclick="actualizarVista('diseno','disenoPrueba',3);" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseno</button>
+				<button id="diseno3" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseno</button>
 			</div>
 			</div>
 
@@ -226,17 +226,17 @@
 		<button class="barra">☰</button>
 	<button id="atras5" class="volver" name="btnAtras"><</button>
 	<br>
-	<h1>Nombre Tatuaje</h1>
+	<h1 id="nombreDiseno" >Nombre Tatuaje</h1>
 	<br>
 
 	<img src="img/OK.png"  id="disenoPrueba" alt=""  class="logo" >
   <br>
 	<br>
-	<p>dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
+	<p id="descripcionDiseno" >dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
 	<br>
-  <u>($)</u>	<input type="text" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
+  <u>($)</u>	<input type="text" id="precioDiseno" size="15" maxlength="30" value="$$$$$$$" name="$$$$$">
 	<br>
-  <u>(*)</u>	<input type="text" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+  <u>(*)</u>	<input type="text"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
 	<br>
 	<u>(._.)</u> <input type="text" size="15" maxlength="30" value="juanito xd" name="Nombre tatuador" readonly>
 	<br>
