@@ -44,20 +44,18 @@ localStorage.removeItem("contrasenaRegistrol");
 		var element = $(imagen);
         element.src = traerImagen(idboton);
 				srcImagen=element.src
-				console.log(srcImagen)
+			
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto1.png"){
 					precioTatuaje="200.000 $"
 					nombreTatuaje="king skull"
 					descripcionTatuaje="Calavera realista con corona color negro enfocada diagonalmente"
-					console.log(precioTatuaje)
-					console.log(nombreTatuaje)
-					console.log(descripcionTatuaje)
+
 					actualizarNombretatuaje(seccion,idNombreTatuaje)
 					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
 				}
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto2.png"){
-					console.log("imagen2")
+
 					precioTatuaje="150.000 $"
 					nombreTatuaje="Dragon serpiente"
 					descripcionTatuaje="Dragon estilo serpiente color negro en su totalidad"
@@ -66,7 +64,7 @@ localStorage.removeItem("contrasenaRegistrol");
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
 				}
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto3.png"){
-					console.log("imagen3")
+
 					precioTatuaje="300.000 $"
 					nombreTatuaje="Calavera trival"
 					descripcionTatuaje="Calavera tipo trival enfocada frontalmente con colores negros"
@@ -80,11 +78,16 @@ localStorage.removeItem("contrasenaRegistrol");
 	function guardarImagen(imagenId){
 
 	}
-	function actualizarVista2(seccion, imagen){
+	function actualizarVista2(seccion, imagen,idPrecioTatuaje,idNombreTatuaje,idDescripcionTatuaje){
 		//CambiarSrc();
 		var element = $(imagen);
 				element.src = srcImagen;
+				actualizarPreciotatuaje(seccion,idPrecioTatuaje)
+				actualizarNombretatuaje(seccion,idNombreTatuaje)
+				actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
+
 				irA($(seccion));
+
 	}
 
 	function crearReferencias(){
