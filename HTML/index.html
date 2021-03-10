@@ -186,16 +186,21 @@
 		<br>
 		<input type="text" size="15" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
 		<br>
-		<br>
-		<input type="text" size="15" maxlength="30" value="Ingrese codigo" name="Codigo1">
-		<br>
-		<br>
 		<div>
 
-			<button class="button button5" name="ReenviarCodigo">Reenviar Codigo</button>
+			<button class="button button5" onclick="alertaEnvioCodigo('envioCodigo','labelCambio')" name="ReenviarCodigo">Enviar Codigo</button>
 			</div>
+			<label id="labelCambio" for="xD">Aqui va</label>
+			<br>
+			<br>
+		<input type="text" id="codigoIngresado" size="15" maxlength="30" placeholder="Ingrese codigo" name="Codigo1">
+		<br>
+		<br>
+
 			<div>
-			<button id="botonrestablecerenvioCodigo" name="botonrestablecer">restablecer</button>
+			<button id="botonrestablecerenvioCodigo" onclick="comprobarCodigoContraseña('restablecerContrasena',codigoIngresado.value,'labelCambio')" name="botonrestablecer">restablecer</button>
+			<br>
+				<label id="labelComprobar" for="xD"></label>
 			<br>
 	</section>
 

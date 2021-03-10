@@ -4,7 +4,7 @@ var secciones ,btnAtrasBarra,btn_atras1;
 let fechaSeparada;
 var seccionActual ,seccionNavegacion,seccionAnterior ,seccionActual1,seccionAnterior1,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen, precioTatuaje, nombreTatuaje, descripcionTatuaje, idMapa;
-
+var codigoCambioContraseña=763721;
 
 
 	function irA(seccion){
@@ -150,7 +150,6 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_registro.addEventListener("click",()=>{irA(registro);});
 		btn_olvidocontra.addEventListener("click",()=>{irA(envioCodigo);});
 		btn_restrarse.addEventListener("click",()=>{irA(login);})
-		btn_restablecerenvioCodigo.addEventListener("click",()=>{irA(restablecerContrasena);})
 		btn_restablecerContrasena.addEventListener("click",()=>{irA(login);})
 		btn_Siguientereserva.addEventListener("click",()=>{irA(reserva);})
 		btn_iniciobarraDesplegable.addEventListener("click",()=>{irA(inicio);})
@@ -358,4 +357,23 @@ localStorage.removeItem("contrasenaRegistrol");
 				elementdireccion.value="calle 101 carrera 15 #102-16"
 			}
 
+	}
+
+	function alertaEnvioCodigo(seccion,label){
+		var element = $(label);
+				element.innerHTML = "su codigo es"+" "+codigoCambioContraseña;
+				irA($(seccion))
+
+	}
+
+	function comprobarCodigoContraseña(seccion,codigoComprobar,label){
+		if(codigoComprobar==codigoCambioContraseña){
+			irA($(seccion))
+		}
+		else{
+			var element = $(label);
+					element.innerHTML = "su codigo es incorrecto";
+					seccion="envioCodigo";
+					irA($(seccion))
+		}
 	}
