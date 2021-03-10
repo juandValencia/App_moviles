@@ -153,7 +153,7 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_Siguientereserva.addEventListener("click",()=>{irA(reserva);})
 		btn_iniciobarraDesplegable.addEventListener("click",()=>{irA(inicio);})
 		btn_reservar1.addEventListener("click",()=>{irA(reservaExitosa1);})
-		btn_LogoutbarraDesplegable.addEventListener("click",()=>{irA(login);});
+
 
 
 
