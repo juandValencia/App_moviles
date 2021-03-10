@@ -150,7 +150,6 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_registro.addEventListener("click",()=>{irA(registro);});
 		btn_olvidocontra.addEventListener("click",()=>{irA(envioCodigo);});
 		btn_restrarse.addEventListener("click",()=>{irA(login);})
-		btn_restablecerContrasena.addEventListener("click",()=>{irA(login);})
 		btn_Siguientereserva.addEventListener("click",()=>{irA(reserva);})
 		btn_iniciobarraDesplegable.addEventListener("click",()=>{irA(inicio);})
 		btn_reservar1.addEventListener("click",()=>{irA(reservaExitosa1);})
@@ -220,17 +219,6 @@ localStorage.removeItem("contrasenaRegistrol");
             element.src = src;
         }
 
-	function inicioSesion(UsuarioEmpieza,ContrasenaUsuario){
-				var usuarioQuemado="Admin"
-				var contraseQuemada="Admin"
-
-				if(UsuarioEmpieza==usuarioQuemado && contraseQuemada==ContrasenaUsuario){
-					btn_inicio.addEventListener("click",()=>{irA(inicio);});
-				}
-				else {
-						alert("Datos Incorrectos");
-				}
-	}
 	function comprobarlocalstorage(){
 		if (typeof(Storage) !== "undefined") {
     // LocalStorage disponible
@@ -241,16 +229,20 @@ localStorage.removeItem("contrasenaRegistrol");
 
 	}
 
-	function iniciosesionlocalstorage(user,contrasena){
+	function iniciosesionlocalstorage(seccion,user,contrasena,label){
 
 		if(user==localStorage.getItem("user")&&contrasena==localStorage.getItem("contra")){
-			btn_inicio.addEventListener("click",()=>{irA(inicio);});
+			irA($(seccion))
 		}
 		else if(user==localStorage.getItem("usuarioRegistrol")&&contrasena==localStorage.getItem("contrasenaRegistrol")) {
-			btn_inicio.addEventListener("click",()=>{irA(inicio);});
+			irA($(seccion))
 		}
 		else {
-			alert("Datos Incorrectos");
+			var element = $(label);
+					element.innerHTML = "Datos incorrectos";
+					seccion="login";
+					irA($(seccion))
+
 		}
 	}
 	function registarmeClick(nombreRegistro,usuarioRegistro,correoRegistro,contrasenaRegistro){
@@ -376,4 +368,23 @@ localStorage.removeItem("contrasenaRegistrol");
 					seccion="envioCodigo";
 					irA($(seccion))
 		}
+	}
+
+	function cambiarContrasena(seccion,contrasenaPrincipal,contrasenaRepetida,label){
+		if(contrasenaPrincipal==contrasenaRepetida){
+			localStorage.setItem("contrasenaRegistrol", contrasenaPrincipal);
+			irA($(seccion))
+		}
+		else{
+			var element = $(label);
+					element.innerHTML = "sus contraseñas no son las mismas";
+					seccion="restablecerContrasena";
+					irA($(seccion))
+		}
+	}
+	function cerrarSesion(seccion,label){
+		var element = $(label);
+				element.innerHTML = " ";
+				seccion="login";
+				irA($(seccion))
 	}

@@ -142,10 +142,12 @@
 		<br>
 		<label><input type="checkbox" id="cbox1" value="first_checkbox"> Recordar Contrasena</label><br>
 		<br>
-
+		<br>
+		<label id="datosComprobar" for="Name"></label>
+		<br>
 		<button  id="olvidaste" class="button button5" name="olvidaste">¿olvidaste contrasena?</button>
 		<br>
-		<button id="botoninicio" onclick="iniciosesionlocalstorage(useruser.value,ContraUser.value)" name="botoninicio">login</button>
+		<button id="botoninicio" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">login</button>
 		<br>
 		<button id="botonregistro" class="button button5" name="registro1">Sign up</button>
 		<br>
@@ -215,13 +217,16 @@
 		<h1>juanpepito@correo.com</h1>
 		<br>
 		<br>
-		<input type="text" size="15" maxlength="30" value="Nueva contrasena" name="NuevaContrasena1">
+		<input type="text" id="contrasenaPrincipalLabel" size="15" maxlength="30" placeholder="Nueva contrasena" name="NuevaContrasena1">
 		<br>
 		<br>
-		<input type="text" size="15" maxlength="30" value="Repetir contraena" name="RepetirContra1">
+		<input type="text" id="contrasenaRepetidalLabel" size="15" maxlength="30" placeholder="Repetir contraena" placeholder="RepetirContra1">
 		<br>
 		<br>
-		<button id="botonrestablecerrestablecerContrasena" name="botonrestablecer2">restablecer</button>
+		<label id="labelContrasenasComprobar" for="xD"></label>
+		<br>
+		<br>
+		<button id="botonrestablecerrestablecerContrasena" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">restablecer</button>
 		<br>
 	</section>
 </section>
@@ -331,7 +336,7 @@
 		<button id="botonContactanosBarraDesplegable" class="button button5"  onclick="javascript:window.open('https://wa.me/573215427297?text=Me%20puedes%20ayudar%20con%20algo%20de%20la%20web','','width=600,height=400,left=50,top=50,toolbar=yes');"   name="Contactanos1">Contactanos</button>
 		<br>
 		<br>
-		<button id="botonLogoutBarraDesplegable" name="Logout">Log out</button>
+		<button id="botonLogoutBarraDesplegable" onclick="cerrarSesion('login','datosComprobar')" name="Logout">Log out</button>
 	</section>
 </body>
 
