@@ -7,7 +7,7 @@ div.calendario {
 
 div.lista {
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
@@ -21,7 +21,7 @@ div.elemento {
   width: 90%;
   height: 120px;
   border-left-style: hidden;
-  
+   border-radius:8px;
   border-bottom: solid;
   border-color: black;
   border-width: 1px;
@@ -39,6 +39,7 @@ div.barraSuperior{
   color: #ffffff;
   font-size: 130%;
   font-family: Gans Gotico Globo;
+
 
 
 
@@ -86,6 +87,10 @@ section.centrada {
   width: 55%;
   height: 55%;
 }
+.imagenMediana{
+  width: 84%;
+  height: 77%;
+}
 
 .bloqueflotante {
   float: left;
@@ -109,7 +114,10 @@ h1.grande {
   font-size:85%;
 
 }
+.fondo-lista1{
+  background-image: url("../IMG/fondo4.png");
 
+}
 body {
   font-family: Gans Gotico Globo;
    width: 310px;
@@ -118,10 +126,13 @@ body {
 }
 
 #splash {
-  background: LightSeaGreen;
+background-image: url("../IMG/fondo.jpg");
+  
 }
 #disenos{
   background:#84A98C;
+  background-image: url("../IMG/fondo3.png");
+  
 }
 
 #registro {
@@ -149,7 +160,9 @@ body {
 }
 
 #inicio {
-  background: #FF5733;
+  background: #6B917E;
+  background-image: url("../IMG/fondo2.png");
+
 }
 
 #estudios {
@@ -269,5 +282,6 @@ body {
   position:relative;
   top:1px;
 }
+
 
 /*# sourceMappingURL=main.css.map */

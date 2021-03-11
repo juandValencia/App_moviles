@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +17,12 @@
 
 	<!--Splash-->
 
-	<section  id="splash"  >
+	<section  id="splash" class="fondo" >
 
 		<div class="centrada">
 			<img src="img/logo.png" class="logoMedio">
 		</div>
+		<p>hola</p>
 	</section>
 	<!-- disenos -->
 <section id="disenos" class="ocultar">
@@ -35,7 +35,7 @@
 		</div>
 		<br>
 		<div class="lista">
-		<div class="elemento">
+		<div class="elemento fondo-lista1">
 			<div class="bloqueflotante">
 				<p class="fuentapequna">King skull</p>
 				<img src="img/tatto1.png" class="imagenpequena">
@@ -48,7 +48,7 @@
 		</div>
 
 
-		<div class="elemento">
+		<div class="elemento fondo-lista1">
 			<div class="bloqueflotante">
 				<p class="fuentapequna">Dragon serpiente</p>
 				<img src="img/tatto2.png" class="imagenpequena">
@@ -59,7 +59,7 @@
 				<button id="diseno2" class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseño</button>
 			</div>
 		</div>
-		<div class="elemento">
+		<div class="elemento fondo-lista1">
 			<div class="bloqueflotante">
 				<p class="fuentapequna">Calavera trival</p>
 				<img src="img/tatto3.png" class="imagenpequena">
@@ -82,43 +82,46 @@
 <section id="inicio" class="ocultar">
 	<button class="barra">☰</button>
 
-	<div><h4>Estudios</h4></div>
-		<br>
+	<div class="barraSuperior">
+			Estudios
+		</div>
 		<br>
 		<div class="lista">
 		<div class="elemento">
 			<div class="bloqueflotante">
-				<p class="fuentapequna">Estudio 1</p>
-				<img src="img/estudio1.jpg" class="imagenpequena">
+				<a class="fuentapequna">Sede Central</a>
+				<img src="img/estudio1.jpg" class="imagenMediana">
 			</div>
 
 			<div class="bloqueflotante">
-				<p class="fuentapequna">sede principal y original de nuestros estudios de tatuaje</p>
-				<button id="dir1" onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="0">Ver Catálogo</button>
+				<p class="fuentepequena">Sede principal y original de nuestros estudios de tatuaje</p>
+				<button id="dir1" class="botonListas" onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="0">Ver Catálogo</button>
 			</div>
 		</div>
 
 
 		<div class="elemento">
 			<div class="bloqueflotante">
-				<p class="fuentapequna">Estudio 2</p>
-				<img src="img/estudio2.jpg" class="imagenpequena">
+				<a class="fuentapequna">Sede Poblado</a>
+				<img src="img/estudio2.jpg" class="imagenMediana">
 			</div>
 
 			<div class="bloqueflotante">
-				<p class="fuentapequna">primera sucursal de nuestras sedes de tatuaje</p>
-				<button id="dir2"  onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="1">Ver Catálogo</button>
+				<p class="fuentepequena">Primera sucursal de nuestras sedes de tatuaje,ubicada en robledo</p>
+				<button id="dir2"  class="botonListas" onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="1">Ver Catálogo</button>
 			</div>
 		</div>
 		<div class="elemento">
 			<div class="bloqueflotante">
-				<p class="fuentapequna">Estudio 3</p>
-				<img src="img/estudio3.jpg" class="imagenpequena">
+				<a class="fuentapequna">Sede Bello</a>
+				<br>
+
+				<img src="img/estudio3.jpg" class="imagenMediana">
 			</div>
 
 			<div class="bloqueflotante">
-				<p class="fuentapequna">Segunda sucursal de nuestras sedes de tatuaje</p>
-				<button id="dir3" onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="2">Ver Catálogo</button>
+				<p class="fuentepequena">Segunda sucursal de nuestras sedes de tatuaje</p>
+				<button id="dir3" class="botonListas" onclick="guardarIDBoton(this.id)" class="botonEstudioinicio" name="2">Ver Catálogo</button>
 			</div>
 			</div>
 
