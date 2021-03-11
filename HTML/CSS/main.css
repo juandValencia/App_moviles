@@ -22,6 +22,17 @@ div.contenedor{
   border-radius:8px;
  background-image: url("../IMG/fondo4.png");
 }
+div.contenedorEnvioCodigo{
+  width: 85%;
+  height: 90%;
+  position: relative;
+  left: 6%;
+ 
+  border-radius:8px;
+ background-image: url("../IMG/fondo4.png");
+}
+
+
 
 div.elemento {
   width: 90%;
@@ -77,6 +88,13 @@ section.centrada {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+input.largo{
+   width: 310px;
+    
+}
+p.pequeno{
+  font-size:2;
 }
 
 .logo {
@@ -150,6 +168,12 @@ background-image: url("../IMG/fondo2.png");
 }
 
 #login {
+  background-image: url("../IMG/dinos.png");
+}
+#envioCodigo{
+    background-image: url("../IMG/dinos.png");
+}
+#restablecerContrasena{
   background-image: url("../IMG/dinos.png");
 }
 

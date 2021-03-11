@@ -170,7 +170,7 @@
 		<br>
 		<label for="Name">Registro</label>
 		<br>
-		
+		<br>
 		<input type="text" size="15" id="nombreRegistroregistro" maxlength="30" placeholder="Nombre" name="nombre">
 		<br>
 		<br>
@@ -193,27 +193,38 @@
 	<!-- envioCodigo -->
 	<section id="envioCodigo" class="ocultar">
 		<button id="atras3" class="volver" name="btnAtras"><</button>
+		<div class="barraSuperior">
+			Restablecer Contraseña
+		</div>
+		<div class="contenedorEnvioCodigo">
 		<br>
-	 	<img src="img/logo.png" alt="" class="logo">
-		<br>
-		<input type="text" size="15" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
+
+	 	<p>Su Correo electronico es:</p>
+		<input type="text" size="20" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
 		<br>
 		<div>
-
+			<br>
 			<button class="button button5" onclick="alertaEnvioCodigo('envioCodigo','labelCambio')" name="ReenviarCodigo">Enviar Codigo</button>
 			</div>
 			<label id="labelCambio" for="xD"></label>
 			<br>
 			<br>
-		<input type="text" id="codigoIngresado" size="15" maxlength="30" placeholder="Ingrese codigo" name="Codigo1">
+		<input type="text" id="codigoIngresado" size="20" maxlength="30" placeholder="Ingrese el Dodigo" name="Codigo1">
 		<br>
 		<br>
 
 			<div>
-			<button id="botonrestablecerenvioCodigo" onclick="comprobarCodigoContraseña('restablecerContrasena',codigoIngresado.value,'labelCambio')" name="botonrestablecer">restablecer</button>
+			<button id="botonrestablecerenvioCodigo" class="botonListas" onclick="comprobarCodigoContraseña('restablecerContrasena',codigoIngresado.value,'labelCambio')" name="botonrestablecer">Restablecer</button>
 			<br>
 				<label id="labelComprobar" for="xD"></label>
 			<br>
+			
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a class="pequeno">&copy; 2021 UPB</a>
 	</section>
 
 
@@ -221,9 +232,12 @@
 		<!-- REstablecer COntrasena -->
 	<section id="restablecerContrasena" class="ocultar">
 		<button id="atras4" class="volver" name="btnAtras1"><</button>
-
+		<div class="barraSuperior">
+			Restablecer Contraseña
+		</div>
+		
+	<div class="contenedorEnvioCodigo">
 		<br>
-
 		<h1>juanpepito@correo.com</h1>
 		<br>
 		<br>
@@ -236,8 +250,9 @@
 		<label id="labelContrasenasComprobar" for="xD"></label>
 		<br>
 		<br>
-		<button id="botonrestablecerrestablecerContrasena" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">restablecer</button>
+		<button id="botonrestablecerrestablecerContrasena" class="botonListas" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">restablecer</button>
 		<br>
+	</div>
 	</section>
 </section>
 
@@ -245,10 +260,12 @@
 <section id="diseno" class="ocultar">
 		<button class="barra">☰</button>
 	<button id="atras5" class="volver" name="btnAtras"><</button>
-	<br>
+	<div class="barraSuperior">
+			Info Diseño
+		</div>
+	
 	<h1 id="nombreDiseno" >Nombre Tatuaje</h1>
-	<br>
-
+	
 	<img src="img/OK.png"  id="disenoPrueba" alt=""  class="logo" >
   <br>
 	<br>
