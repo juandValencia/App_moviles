@@ -216,8 +216,8 @@ background-image: url("../IMG/fondo2.png");
   background: YellowGreen;
 }
 
-#creditos {
-  background: DeepSkyBlue;
+#barraDesplegable {
+    background-image: url("../IMG/fondo3.png");
 }
 
 #instrucciones p {
@@ -225,7 +225,7 @@ background-image: url("../IMG/fondo2.png");
   text-align: left;
 }
 #calendario{
-   background-image: url("../IMG/fondo3.png");
+   background-image: url("../IMG/fondo3.png");D
 }
 
 .boton {
