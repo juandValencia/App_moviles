@@ -22,7 +22,7 @@
 		<div class="centrada">
 			<img src="img/logo.png" class="logoMedio">
 		</div>
-		
+
 	</section>
 	<!-- disenos -->
 <section id="disenos" class="ocultar">
@@ -43,7 +43,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Calavera realista con corona color negro enfocada diagonalmente</p>
-				<button id="diseno1" class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseño</button>
+				<button id="diseno1" class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseño</button>
 			</div>
 		</div>
 
@@ -56,7 +56,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Dragon estilo serpiente color negro en su totalidad</p>
-				<button id="diseno2" class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseño</button>
+				<button id="diseno2" class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseño</button>
 			</div>
 		</div>
 		<div class="elemento fondo-lista1">
@@ -67,7 +67,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Calavera tipo trival enfocada frontalmente con colores negros</p>
-				<button id="diseno3"  class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseño</button>
+				<button id="diseno3"  class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseño</button>
 			</div>
 			</div>
 
@@ -134,7 +134,7 @@
 	<!-- login -->
 	<section id="login" class="ocultar">
 	<div class="contenedor">
-		
+
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
 		<label for="Name">Inicio sesión</label>
@@ -146,14 +146,15 @@
 		<input type="password" size="15" id="ContraUser" maxlength="30" placeholder="Contraseña" name="UsuarioContrasena22">
 		<br>
 		<br>
-		<button id="botoninicio" class="botonListas" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">Iniciar sesión</button>
+		<button id="botoninicio" class="botonNormal" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">Iniciar sesión</button>
+		<br>
 		<label id="datosComprobar" for="Name"></label>
 		<br>
 
 		<br>
 		<button  id="olvidaste" class="button button5" name="olvidaste">¿Olvidaste contraseña?</button>
 		<br>
-	
+
 		<button id="botonregistro" class="button button5" name="registro1">Registrarme</button>
 		<br>
 		</div>
@@ -162,10 +163,10 @@
 	<!-- registro -->
 	<section id="registro" class="ocultar">
 		<button id="atras2" class="volver" name="btnAtras"><</button>
-	
+
 		<div class="contenedor">
-			
-		
+
+
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
 		<label for="Name">Registro</label>
@@ -185,7 +186,7 @@
 		<input type="password" size="15" maxlength="30" placeholder="Repetir Contraseña" name="Rcontrasena">
 		<br>
 		<br>
-		<button id="botonRegistoregistro" class="botonListas" onclick="registarmeClick(nombreRegistroregistro.value,usuarioRegistroRegistro.value,correoRegistroRegistro.value,passwordRegistroRegistro.value)"  name="botonregistro">Registrarse</button>
+		<button id="botonRegistoregistro" class="botonNormal" onclick="registarmeClick(nombreRegistroregistro.value,usuarioRegistroRegistro.value,correoRegistroRegistro.value,passwordRegistroRegistro.value)"  name="botonregistro">Registrarse</button>
 		<br>
 		</div>
 	</section>
@@ -214,11 +215,11 @@
 		<br>
 
 			<div>
-			<button id="botonrestablecerenvioCodigo" class="botonListas" onclick="comprobarCodigoContraseña('restablecerContrasena',codigoIngresado.value,'labelCambio')" name="botonrestablecer">Restablecer</button>
+			<button id="botonrestablecerenvioCodigo" class="botonNormal" onclick="comprobarCodigoContraseña('restablecerContrasena',codigoIngresado.value,'labelCambio')" name="botonrestablecer">Restablecer</button>
 			<br>
 				<label id="labelComprobar" for="xD"></label>
 			<br>
-			
+
 		</div>
 		<br>
 		<br>
@@ -235,7 +236,7 @@
 		<div class="barraSuperior">
 			Restablecer Contraseña
 		</div>
-		
+
 	<div class="contenedorEnvioCodigo">
 		<br>
 		<h1>juanpepito@correo.com</h1>
@@ -250,7 +251,7 @@
 		<label id="labelContrasenasComprobar" for="xD"></label>
 		<br>
 		<br>
-		<button id="botonrestablecerrestablecerContrasena" class="botonListas" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">Restablecer</button>
+		<button id="botonrestablecerrestablecerContrasena" class="botonNormal" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">Restablecer</button>
 		<br>
 	</div>
 	</section>
@@ -266,17 +267,17 @@
 	<div class="contenedorEnvioCodigo">
 		<br>
 	<h3 id="nombreDiseno" >Nombre Tatuaje</h3>
-	
+
 	<img src="img/OK.png"  id="disenoPrueba" alt=""  class="logo" >
- 	
+
 	<p id="descripcionDiseno" >dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
-	
+
   	<img src="img/precio.png" class="icono">   <input type="text" id="precioDiseno" size="15" maxlength="30" value="$$$$$$$" name="$$$$$">
 	<br>
-	
+
   <img src="img/ubicacion.png" class="icono"> 	<input type="text" id="direccionDiseno"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
 	<br>
-	
+
 	<img src="img/user.png" class="icono">   <select name="transporte">
 
 <option>Jose Alfredo Jímenez</option>
@@ -288,7 +289,7 @@
 </select>
 	<br>
 	<br>
-	<button id="botonSiguientediseno" class="botonListas" onclick="actualizarVista2('reserva','disenoreserva','precioReserva','nombreReserva','descripcionReserva','direccionReserva');" name="Siguiente">Siguiente</button>
+	<button id="botonSiguientediseno" class="botonNormal" onclick="actualizarVista2('reserva','disenoreserva','precioReserva','nombreReserva','descripcionReserva','direccionReserva');" name="Siguiente">Siguiente</button>
 </div>
 </section>
 
@@ -314,7 +315,7 @@
 	<br>
 	<img src="img/fecha.png" class="icono"> 	<input type="date" size="15" maxlength="30" id="start" name="trip-start" value="2018-07-22" min="2021-01-01" max="2022-12-31" >
 	<br><br>
-	<button id="botonreservarreservar" class="botonListas" onclick="almacenarFecha(start.value);" name="reservarTatu">Reservar</button>
+	<button id="botonreservarreservar" class="botonNormal" onclick="almacenarFecha(start.value);" name="reservarTatu">Reservar</button>
 </div>
 
 </section>
@@ -325,13 +326,13 @@
 	<div class="barraSuperior">
 			Reserva Correcta
 		</div>
-	
+
 		<div class="contenedorEnvioCodigo">
 		<br>
 	<img src="img/OK.png" alt="" class="logo">
 	<br>
 	<br>
-	
+
 	<a>Su reserva fue hecha con exito.</a>
 	<br>
 </div>
@@ -344,13 +345,13 @@
 		<div class="barraSuperior">
 			Fecha Cita
 		</div>
-		
+
 	 	<h3>Mi cita</h3>
 		<div class="calendario">
 			<h1 id="diaCalendario" class="grande" text="30">30</h1>
 			<p id="mesCalendario" class="grande" text="Abril">Abril</p>
 		</div>
-		
+
 	</div>
 	</section>
 

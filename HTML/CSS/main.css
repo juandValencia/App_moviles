@@ -98,7 +98,7 @@ img.icono{
 }
 input.largo{
    width: 310px;
-    
+
 }
 p.pequeno{
   font-size:2;
@@ -135,7 +135,7 @@ a.reservaAncho{
 
 .ocultar {
   /* display: none;*/
-  
+  display: none;
 }
 
 h1.grande {
@@ -276,7 +276,7 @@ background-image: url("../IMG/fondo2.png");
 }
 
 .button5:hover {
-  
+
   background-image:url("../IMG/fondo5.png");
   color: white;
 }
@@ -307,6 +307,18 @@ background-image: url("../IMG/fondo2.png");
   top: 1px;
 }
 .botonListas {
+  background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
+  background-color:#e9c56a;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-style:italic;
+  padding:5px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #588157;
+}
+.botonNormal {
   background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
   background-color:#e9c56a;
   border-radius:8px;
