@@ -31,7 +31,7 @@ div.elemento {
 div.barraSuperior{
   width: 310px;
   height: 33px;
-  border-radius:1px; 
+  border-radius:1px;
   background-color: #2F3E46;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
@@ -100,7 +100,7 @@ section.centrada {
 
 .ocultar {
   /* display: none;*/
-  
+  display: none;
 }
 
 h1.grande {
@@ -130,13 +130,13 @@ body {
 
 #splash {
 background-image: url("../IMG/fondo.jpg");
-  
+
 }
 #disenos{
   background:#84A98C;
   background-image: url("../IMG/fondo3.png");
 
-  
+
 }
 
 #registro {
@@ -195,7 +195,7 @@ background-image: url("../IMG/fondo.jpg");
 
 .volver {
   float: left;
-  
+
   background-color: black;
   color: #ffffff;
   border: 1px solid #264653;
@@ -267,6 +267,18 @@ background-image: url("../IMG/fondo.jpg");
   top: 1px;
 }
 .botonListas {
+  background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
+  background-color:#e9c56a;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-style:italic;
+  padding:5px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #588157;
+}
+.botonListasDiseño {
   background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
   background-color:#e9c56a;
   border-radius:8px;

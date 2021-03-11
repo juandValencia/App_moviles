@@ -28,8 +28,8 @@
 <section id="disenos" class="ocultar">
 		<button class="barra">☰</button>
 	<button id="atras1" class="volver" name="btnAtras"><</button>
-	
-					
+
+
 		<div class="barraSuperior">
 			Diseños
 		</div>
@@ -43,7 +43,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Calavera realista con corona color negro enfocada diagonalmente</p>
-				<button id="diseno1" class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseño</button>
+				<button id="diseno1" class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseño</button>
 			</div>
 		</div>
 
@@ -56,7 +56,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Dragon estilo serpiente color negro en su totalidad</p>
-				<button id="diseno2" class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseño</button>
+				<button id="diseno2" class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseño</button>
 			</div>
 		</div>
 		<div class="elemento fondo-lista1">
@@ -67,7 +67,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Calavera tipo trival enfocada frontalmente con colores negros</p>
-				<button id="diseno3"  class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseño</button>
+				<button id="diseno3"  class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseño</button>
 			</div>
 			</div>
 
@@ -137,25 +137,21 @@
 		<br>
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
-		<label for="Name">sign up</label>
+		<label for="Name">Inicio sesión</label>
 		<br>
 		<br>
 		<input type="text" size="15" id="useruser" maxlength="30" placeholder="Usuario" name="Usuarioinicio22">
 		<br>
 		<br>
-		<input type="password" size="15" id="ContraUser" maxlength="30" placeholder="Contrasena" name="UsuarioContrasena22">
-		<br>
-		<br>
-		<label><input type="checkbox" id="cbox1" value="first_checkbox"> Recordar Contrasena</label><br>
-		<br>
+		<input type="password" size="15" id="ContraUser" maxlength="30" placeholder="Contraseña" name="UsuarioContrasena22">
 		<br>
 		<label id="datosComprobar" for="Name"></label>
 		<br>
-		<button  id="olvidaste" class="button button5" name="olvidaste">¿olvidaste contrasena?</button>
+		<button  id="olvidaste" class="button button5" name="olvidaste">¿olvidaste contraseña?</button>
 		<br>
-		<button id="botoninicio" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">login</button>
+		<button id="botoninicio" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">Iniciar sesión</button>
 		<br>
-		<button id="botonregistro" class="button button5" name="registro1">Sign up</button>
+		<button id="botonregistro" class="button button5" name="registro1">Registrarme</button>
 		<br>
 
 	</section>
@@ -163,10 +159,9 @@
 	<section id="registro" class="ocultar">
 		<button id="atras2" class="volver" name="btnAtras"><</button>
 		<br>
-		<h1>registro</h1>
+		<h1>Registro</h1>
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
-		<label for="Name">Sign up</label>
 		<br>
 		<input type="text" size="15" id="nombreRegistroregistro" maxlength="30" placeholder="Nombre" name="nombre">
 		<br>
@@ -177,9 +172,9 @@
 		<input type="text" size="15" id="correoRegistroRegistro" maxlength="30" placeholder="Correo" name="Correo">
 		<br>
 		<br>
-		<input type="password" size="15" id="passwordRegistroRegistro" maxlength="30" placeholder="Contrasena" name="Contrasena">
+		<input type="password" size="15" id="passwordRegistroRegistro" maxlength="30" placeholder="Contraseña" name="Contrasena">
 		<br><br>
-		<input type="password" size="15" maxlength="30" placeholder="Repetir Contrasena" name="Rcontrasena">
+		<input type="password" size="15" maxlength="30" placeholder="Repetir Contraseña" name="Rcontrasena">
 		<br>
 		<br>
 		<button id="botonRegistoregistro" onclick="registarmeClick(nombreRegistroregistro.value,usuarioRegistroRegistro.value,correoRegistroRegistro.value,passwordRegistroRegistro.value)"  name="botonregistro">Registrarse</button>
@@ -223,10 +218,10 @@
 		<h1>juanpepito@correo.com</h1>
 		<br>
 		<br>
-		<input type="text" id="contrasenaPrincipalLabel" size="15" maxlength="30" placeholder="Nueva contrasena" name="NuevaContrasena1">
+		<input type="text" id="contrasenaPrincipalLabel" size="15" maxlength="30" placeholder="Nueva contraseña" name="NuevaContrasena1">
 		<br>
 		<br>
-		<input type="text" id="contrasenaRepetidalLabel" size="15" maxlength="30" placeholder="Repetir contraena" placeholder="RepetirContra1">
+		<input type="text" id="contrasenaRepetidalLabel" size="15" maxlength="30" placeholder="Repetir contraeña" placeholder="RepetirContra1">
 		<br>
 		<br>
 		<label id="labelContrasenasComprobar" for="xD"></label>
@@ -286,8 +281,6 @@
 	<br>
 	<u>fecha</u>	<input type="date" size="15" maxlength="30" id="start" name="trip-start" value="2018-07-22" min="2021-01-01" max="2022-12-31" >
 	<br>
-	<u>tamano</u>	<input type="text" size="15" maxlength="30" value="25 cm" name="tamanoTatu" readonly>
-	<br>
 	<button id="botonreservarreservar" onclick="almacenarFecha(start.value);" name="reservarTatu">reservar</button>
 
 </section>
@@ -342,7 +335,7 @@
 		<button id="botonContactanosBarraDesplegable" class="button button5"  onclick="javascript:window.open('https://wa.me/573215427297?text=Me%20puedes%20ayudar%20con%20algo%20de%20la%20web','','width=600,height=400,left=50,top=50,toolbar=yes');"   name="Contactanos1">Contactanos</button>
 		<br>
 		<br>
-		<button id="botonLogoutBarraDesplegable" onclick="cerrarSesion('login','datosComprobar')" name="Logout">Log out</button>
+		<button id="botonLogoutBarraDesplegable" onclick="cerrarSesion('login','datosComprobar')" name="Logout">Cerrar sesión</button>
 	</section>
 </body>
 

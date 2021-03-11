@@ -48,7 +48,7 @@ localStorage.removeItem("contrasenaRegistrol");
 				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto1.png"){
 					precioTatuaje="200.000 $"
 					nombreTatuaje="king skull"
-					descripcionTatuaje="Calavera realista con corona color negro enfocada diagonalmente"
+					descripcionTatuaje="Calavera realista con corona color negro enfocada diagonalmente un tamaño de 25 cm^2"
 
 					actualizarNombretatuaje(seccion,idNombreTatuaje)
 					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
@@ -59,7 +59,7 @@ localStorage.removeItem("contrasenaRegistrol");
 
 					precioTatuaje="150.000 $"
 					nombreTatuaje="Dragon serpiente"
-					descripcionTatuaje="Dragon estilo serpiente color negro en su totalidad"
+					descripcionTatuaje="Dragon estilo serpiente color negro en su totalidad un tamaño de 30 cm^2"
 					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 					actualizarNombretatuaje(seccion,idNombreTatuaje)
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
@@ -69,7 +69,7 @@ localStorage.removeItem("contrasenaRegistrol");
 
 					precioTatuaje="300.000 $"
 					nombreTatuaje="Calavera trival"
-					descripcionTatuaje="Calavera tipo trival enfocada frontalmente con colores negros"
+					descripcionTatuaje="Calavera tipo trival enfocada frontalmente con colores negros un tamaño de 22 cm^2"
 					actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 					actualizarNombretatuaje(seccion,idNombreTatuaje)
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
@@ -118,8 +118,8 @@ localStorage.removeItem("contrasenaRegistrol");
 		btnAtras=document.getElementsByClassName("volver");
 
 		btn_atras=document.getElementsByClassName("volver");
-		btn_verDiseno=document.getElementsByClassName("botonEstudioinicio");
-		btn_iraDiseno=document.getElementsByClassName("botonVerDieno");
+		btn_verDiseno=document.getElementsByClassName("botonListas");
+		btn_iraDiseno=document.getElementsByClassName("botonListasDiseño");
 		btn_Siguientereserva=document.getElementById("botonSiguientediseno");
 		btn_barra=document.getElementsByClassName('barra');
 		btn_iniciobarraDesplegable=document.getElementById("botoninicioBarraDesplegable");
