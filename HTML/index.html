@@ -22,7 +22,7 @@
 		<div class="centrada">
 			<img src="img/logo.png" class="logoMedio">
 		</div>
-		<p>hola</p>
+		
 	</section>
 	<!-- disenos -->
 <section id="disenos" class="ocultar">
@@ -43,7 +43,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Calavera realista con corona color negro enfocada diagonalmente</p>
-				<button id="diseno1" class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseño</button>
+				<button id="diseno1" class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',1,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');"  onclick="actualizarVista2('reserva','disenoreserva',1);">Ver diseño</button>
 			</div>
 		</div>
 
@@ -56,7 +56,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Dragon estilo serpiente color negro en su totalidad</p>
-				<button id="diseno2" class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseño</button>
+				<button id="diseno2" class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',2,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',2);">Ver diseño</button>
 			</div>
 		</div>
 		<div class="elemento fondo-lista1">
@@ -67,7 +67,7 @@
 
 			<div class="bloqueflotante">
 				<p class="fuentepequena">Calavera tipo trival enfocada frontalmente con colores negros</p>
-				<button id="diseno3"  class="botonListasDiseño" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseño</button>
+				<button id="diseno3"  class="botonListas" onclick="actualizarVista('diseno','disenoPrueba',3,'nombreDiseno','precioDiseno','descripcionDiseno','direccionDiseno');" onclick="actualizarVista2('reserva','disenoreserva',3);">Ver diseño</button>
 			</div>
 			</div>
 
@@ -133,8 +133,8 @@
 </section>
 	<!-- login -->
 	<section id="login" class="ocultar">
-
-		<br>
+	<div class="contenedor">
+		
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
 		<label for="Name">Inicio sesión</label>
@@ -145,24 +145,32 @@
 		<br>
 		<input type="password" size="15" id="ContraUser" maxlength="30" placeholder="Contraseña" name="UsuarioContrasena22">
 		<br>
+		<br>
+		<button id="botoninicio" class="botonListas" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">Iniciar sesión</button>
 		<label id="datosComprobar" for="Name"></label>
 		<br>
-		<button  id="olvidaste" class="button button5" name="olvidaste">¿olvidaste contraseña?</button>
+
 		<br>
-		<button id="botoninicio" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">Iniciar sesión</button>
+		<button  id="olvidaste" class="button button5" name="olvidaste">¿Olvidaste contraseña?</button>
 		<br>
+	
 		<button id="botonregistro" class="button button5" name="registro1">Registrarme</button>
 		<br>
+		</div>
 
 	</section>
 	<!-- registro -->
 	<section id="registro" class="ocultar">
 		<button id="atras2" class="volver" name="btnAtras"><</button>
-		<br>
-		<h1>Registro</h1>
+	
+		<div class="contenedor">
+			
+		
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
+		<label for="Name">Registro</label>
 		<br>
+		
 		<input type="text" size="15" id="nombreRegistroregistro" maxlength="30" placeholder="Nombre" name="nombre">
 		<br>
 		<br>
@@ -177,8 +185,9 @@
 		<input type="password" size="15" maxlength="30" placeholder="Repetir Contraseña" name="Rcontrasena">
 		<br>
 		<br>
-		<button id="botonRegistoregistro" onclick="registarmeClick(nombreRegistroregistro.value,usuarioRegistroRegistro.value,correoRegistroRegistro.value,passwordRegistroRegistro.value)"  name="botonregistro">Registrarse</button>
+		<button id="botonRegistoregistro" class="botonListas" onclick="registarmeClick(nombreRegistroregistro.value,usuarioRegistroRegistro.value,correoRegistroRegistro.value,passwordRegistroRegistro.value)"  name="botonregistro">Registrarse</button>
 		<br>
+		</div>
 	</section>
 
 	<!-- envioCodigo -->
