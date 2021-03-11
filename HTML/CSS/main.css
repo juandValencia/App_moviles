@@ -118,6 +118,9 @@ h1.grande {
   background-image: url("../IMG/fondo4.png");
 
 }
+.fondo-lista2{
+  background-image: url("../IMG/fondo5.png");
+}
 body {
   font-family: Gans Gotico Globo;
    width: 310px;
@@ -132,6 +135,7 @@ background-image: url("../IMG/fondo.jpg");
 #disenos{
   background:#84A98C;
   background-image: url("../IMG/fondo3.png");
+
   
 }
 
@@ -161,7 +165,8 @@ background-image: url("../IMG/fondo.jpg");
 
 #inicio {
   background: #6B917E;
-  background-image: url("../IMG/fondo2.png");
+  background-image: url("../IMG/fondo3.png");
+  color: #ffffff;
 
 }
 
