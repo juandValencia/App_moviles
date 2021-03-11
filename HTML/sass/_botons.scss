@@ -1,0 +1,142 @@
+.boton {
+  background-color: Navy;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.volver {
+  float: left;
+
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid #264653;
+  padding: 6px 6px;
+  background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
+
+}
+.volver:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #E9C46A 100%);
+  background-color: #bab1ba;
+  color: black;
+}
+
+.volver2 {
+  float: left;
+  color: pink;
+  background-color: black;
+}
+
+
+.button5 {
+  background:none;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Gans Gotico Globo;
+  border-radius: 10px;
+
+  color: black;
+  outline: none;
+}
+
+.button5:hover {
+
+  background-image:url("../IMG/fondo5.png");
+  color: white;
+}
+
+.barra {
+   float: right;
+  background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
+  background-color: black;
+  border: 1px solid #264653;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 5px 7px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px black;
+}
+
+.barra:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #E9C46A 100%);
+  background-color: #bab1ba;
+  color:black;
+}
+
+.barra:active {
+  position: relative;
+  top: 1px;
+}
+.botonListas {
+  background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
+  background-color:#e9c56a;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-style:italic;
+  padding:5px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #588157;
+}
+.botonNormal {
+  background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
+  background-color:#e9c56a;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-style:italic;
+  padding:5px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #588157;
+}
+.botonNormal:hover {
+  background:linear-gradient(to bottom, #f94e9b 5%, #4CC9F0 100%);
+  background-color:#588157;
+  color: #000000;
+}
+.botonListasDiseño {
+  background: linear-gradient(to bottom, black 5%, #bab1ba 100%);
+  background-color:#e9c56a;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-style:italic;
+  padding:5px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #588157;
+}
+
+.botonListasDiseño:hover {
+  background:linear-gradient(to bottom, #f94e9b 5%, #4CC9F0 100%);
+  background-color:#588157;
+  color: #000000;
+}
+
+.botonListasDiseño:active {
+  position:relative;
+  top:1px;
+}
+.botonListas:hover {
+  background:linear-gradient(to bottom, #f94e9b 5%, #4CC9F0 100%);
+  background-color:#588157;
+  color: #000000;
+}
+.botonListas:active {
+  position:relative;
+  top:1px;
+}
+
+
+/*# sourceMappingURL=main.css.map */

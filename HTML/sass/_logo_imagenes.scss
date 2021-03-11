@@ -1,13 +1,55 @@
-.logo{
-  width:100px;
-  height:100px;
+img.icono{
+  width: 20px;
+  height:20px;
 }
-.logoMedio{
-    width:200px;
-    height:200px;
+input.largo{
+   width: 310px;
 
 }
-.imagenpequena{
-  width:55%;
-  height:55%;
+p.pequeno{
+  font-size:2;
+}
+a.reservaAncho{
+  width:auto;
+  height:90%;
+}
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logoMedio {
+  width: 200px;
+  height: 200px;
+}
+
+.imagenpequena {
+  width: 55%;
+  height: 55%;
+}
+.imagenMediana{
+  width: 84%;
+  height: 77%;
+}
+
+
+h1.grande {
+  font-size: 50px;
+}
+
+.fuentapequna {
+  font-size:95%;
+}
+.fuentepequena{
+  font-size:85%;
+
+}
+.fondo-lista1{
+  background-image: url("../IMG/fondo4.png");
+
+}
+.fondo-lista2{
+  background-image: url("../IMG/fondo5.png");
 }

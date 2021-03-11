@@ -1,20 +1,84 @@
-section{
-  width:310px;
-  height:450px;
+section {
+  width: 310px;
+  height: 450px;
   text-align: center;
   border-style: solid;
-border-color: black;
- border-width:2px;
+  border-color: black;
+  border-width: 2px;
+}
+
+section.centrada {
+  width: 310px;
+  height: 450px;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash {
+background-image: url("../IMG/fondo2.png");
+
+}
+#disenos{
+  background:#84A98C;
+  background-image: url("../IMG/fondo3.png");
 
 
 }
-section.centrada{
-    width:310px;
-  height:450px;
-  text-align: center;
-  border-style: solid;
-border-color: black;
-    display: flex;
-  justify-content: center;
-  align-items: center;
+
+#registro {
+  background-image: url("../IMG/dinos.png");
+}
+
+#login {
+  background-image: url("../IMG/dinos.png");
+}
+#envioCodigo{
+    background-image: url("../IMG/dinos.png");
+}
+#restablecerContrasena{
+  background-image: url("../IMG/dinos.png");
+}
+
+#diseno {
+   background-image: url("../IMG/fondo3.png");
+}
+
+#reservar {
+  background-image: url("../IMG/fondo5.png");
+}
+
+
+#reservaExitosa {
+   background-image: url("../IMG/fondo3.png");
+}
+
+#inicio {
+  background: #6B917E;
+  background-image: url("../IMG/fondo3.png");
+  color: #ffffff;
+
+}
+
+#estudios {
+  background: #FF5733;
+}
+
+#instrucciones {
+  background: YellowGreen;
+}
+
+#barraDesplegable {
+    background-image: url("../IMG/fondo3.png");
+}
+
+#instrucciones p {
+  margin: 25px;
+  text-align: left;
+}
+#calendario{
+   background-image: url("../IMG/fondo3.png");
 }
