@@ -15,7 +15,7 @@ div.lista {
 }
 div.contenedor{
   width: 85%;
-  height: 90%;
+  height: 93%;
   position: relative;
   left: 6%;
   top: 5%;
@@ -24,10 +24,10 @@ div.contenedor{
 }
 div.contenedorEnvioCodigo{
   width: 85%;
-  height: 90%;
+  height: 92%;
   position: relative;
   left: 6%;
- 
+
   border-radius:8px;
  background-image: url("../IMG/fondo4.png");
 }
@@ -67,7 +67,10 @@ div.calendario {
   height: 200px;
   margin: 0px auto;
   border-style: solid;
+  border-radius: 8px;
   border-color: black;
+  background-image: url("../IMG/fondo2.png");
+
 }
 
 section {
@@ -89,12 +92,20 @@ section.centrada {
   justify-content: center;
   align-items: center;
 }
+img.icono{
+  width: 20px;
+  height:20px;
+}
 input.largo{
    width: 310px;
     
 }
 p.pequeno{
   font-size:2;
+}
+a.reservaAncho{
+  width:auto;
+  height:90%;
 }
 
 .logo {
@@ -177,20 +188,17 @@ background-image: url("../IMG/fondo2.png");
   background-image: url("../IMG/dinos.png");
 }
 
-#diseño {
-  background: violet;
+#diseno {
+   background-image: url("../IMG/fondo3.png");
 }
 
 #reservar {
-  background: violet;
+  background-image: url("../IMG/fondo5.png");
 }
 
-#whatsapp {
-  background: violet;
-}
 
 #reservaExitosa {
-  background: Violet;
+   background-image: url("../IMG/fondo3.png");
 }
 
 #inicio {
@@ -215,6 +223,9 @@ background-image: url("../IMG/fondo2.png");
 #instrucciones p {
   margin: 25px;
   text-align: left;
+}
+#calendario{
+   background-image: url("../IMG/fondo3.png");
 }
 
 .boton {

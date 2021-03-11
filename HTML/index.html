@@ -250,7 +250,7 @@
 		<label id="labelContrasenasComprobar" for="xD"></label>
 		<br>
 		<br>
-		<button id="botonrestablecerrestablecerContrasena" class="botonListas" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">restablecer</button>
+		<button id="botonrestablecerrestablecerContrasena" class="botonListas" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">Restablecer</button>
 		<br>
 	</div>
 	</section>
@@ -263,19 +263,21 @@
 	<div class="barraSuperior">
 			Info Diseño
 		</div>
-	
-	<h1 id="nombreDiseno" >Nombre Tatuaje</h1>
+	<div class="contenedorEnvioCodigo">
+		<br>
+	<h3 id="nombreDiseno" >Nombre Tatuaje</h3>
 	
 	<img src="img/OK.png"  id="disenoPrueba" alt=""  class="logo" >
-  <br>
-	<br>
+ 	
 	<p id="descripcionDiseno" >dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
+	
+  	<img src="img/precio.png" class="icono">   <input type="text" id="precioDiseno" size="15" maxlength="30" value="$$$$$$$" name="$$$$$">
 	<br>
-  <u>($)</u>	<input type="text" id="precioDiseno" size="15" maxlength="30" value="$$$$$$$" name="$$$$$">
+	
+  <img src="img/ubicacion.png" class="icono"> 	<input type="text" id="direccionDiseno"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
 	<br>
-  <u>(*)</u>	<input type="text" id="direccionDiseno"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
-	<br>
-	<u>(._.)</u> <select name="transporte">
+	
+	<img src="img/user.png" class="icono">   <select name="transporte">
 
 <option>Jose Alfredo Jímenez</option>
 
@@ -285,64 +287,71 @@
 
 </select>
 	<br>
-	<button id="botonSiguientediseno" onclick="actualizarVista2('reserva','disenoreserva','precioReserva','nombreReserva','descripcionReserva','direccionReserva');" name="Siguiente">Siguiente</button>
-
+	<br>
+	<button id="botonSiguientediseno" class="botonListas" onclick="actualizarVista2('reserva','disenoreserva','precioReserva','nombreReserva','descripcionReserva','direccionReserva');" name="Siguiente">Siguiente</button>
+</div>
 </section>
 
 <!-- reserva-->
 <section id="reservar" class="ocultar">
 		<button class="barra">☰</button>
 	<button id="atras6" class="volver" name="btnAtras"><</button>
+	<div class="barraSuperior">
+			Reservar
+		</div>
+	<div class="contenedorEnvioCodigo">
 	<br>
-	<h1 id="nombreReserva">Nombre Tatuaje</h1>
+	<h3 id="nombreReserva">Nombre Tatuaje</h3>
 	<br>
 	<img src="img/tatto1.png" id="disenoreserva"  alt="" class="logo">
 	<br>
 	<br>
-	<p id="descripcionReserva">dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
+	<a id="descripcionReserva" class="reservaAncho">dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadsadsdnjndjandj</a>
+	<br><br>
+  <img src="img/precio.png" class="icono"> 	<input type="text" id="precioReserva" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
 	<br>
-  <u>($)</u>	<input type="text" id="precioReserva" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
+ <img src="img/ubicacion.png" class="icono"> 	<input type="text" id="direccionReserva" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
 	<br>
-  <u>(*)</u>	<input type="text" id="direccionReserva" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
-	<br>
-	<u>fecha</u>	<input type="date" size="15" maxlength="30" id="start" name="trip-start" value="2018-07-22" min="2021-01-01" max="2022-12-31" >
-	<br>
-	<button id="botonreservarreservar" onclick="almacenarFecha(start.value);" name="reservarTatu">reservar</button>
+	<img src="img/fecha.png" class="icono"> 	<input type="date" size="15" maxlength="30" id="start" name="trip-start" value="2018-07-22" min="2021-01-01" max="2022-12-31" >
+	<br><br>
+	<button id="botonreservarreservar" class="botonListas" onclick="almacenarFecha(start.value);" name="reservarTatu">Reservar</button>
+</div>
 
 </section>
 
 	<!-- notficacion -->
 <section id="reservaExitosa" class="ocultar">
 	<button id="atras7" class="volver" name="btnAtras"><</button>
-	<br>
+	<div class="barraSuperior">
+			Reserva Correcta
+		</div>
+	
+		<div class="contenedorEnvioCodigo">
+		<br>
 	<img src="img/OK.png" alt="" class="logo">
 	<br>
 	<br>
-	<u>reserva exitosa</u>
+	
+	<a>Su reserva fue hecha con exito.</a>
 	<br>
+</div>
 </section>
 
-<section id="whatsapp" class="ocultar">
-	<button id="atras8" class="volver" name="btnAtras"><</button>
-	<br>
-	<img src="img/wpp.png" alt="" class="logo">
-	<br>
-	<br>
-	<u>reserva exitosa</u>
-	<br>
-</section>
 <!--calendario-->
 
 	<section id="calendario" class="ocultar">
 		<button id="atras9" class="volver" name="btnAtras"><</button>
-		<br>
-	 	<h1>Mi cita</h1>
-		<br>
+		<div class="barraSuperior">
+			Fecha Cita
+		</div>
+		
+	 	<h3>Mi cita</h3>
 		<div class="calendario">
 			<h1 id="diaCalendario" class="grande" text="30">30</h1>
 			<p id="mesCalendario" class="grande" text="Abril">Abril</p>
 		</div>
-		<br>
+		
+	</div>
 	</section>
 
 		<!-- BarraDesplegalbe-->
