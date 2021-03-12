@@ -1,6 +1,8 @@
 # App_moviles
 Aplicacion Hibrida para celulares En html, esta aplicación en particular esta pensada en un sistema que permita agendar tatuajes de manera remota
 
+https://www.canva.com/design/DAEYjuCP2zo/mVtmAFPBAi5rU-VrYQKQ5w/edit
+
 # Como utilizar este proyecto
 no existen requisitos previos para la implementacion de este proyecto, sin embargo se recomienda su ejecucion para pruebas y demas en Google Chrome
 (pronto el instalador)
