@@ -44,8 +44,10 @@ localStorage.removeItem("contrasenaRegistrol");
 		var element = $(imagen);
         element.src = traerImagen(idboton);
 				srcImagen=element.src
-
-				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto1.png"){
+				srcImagen=srcImagen.split("/").reverse()
+				srcImagen=srcImagen[0]
+				console.log(srcImagen)
+				if(srcImagen=="tatto1.png"){
 					precioTatuaje="200.000 $"
 					nombreTatuaje="king skull"
 					descripcionTatuaje="Calavera realista con corona color negro enfocada diagonalmente un tamaño de 25 cm^2"
@@ -55,7 +57,7 @@ localStorage.removeItem("contrasenaRegistrol");
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
 					actualizarDireccion(seccion,idDireccion)
 				}
-				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto2.png"){
+				if(srcImagen=="tatto2.png"){
 
 					precioTatuaje="150.000 $"
 					nombreTatuaje="Dragon serpiente"
@@ -65,7 +67,7 @@ localStorage.removeItem("contrasenaRegistrol");
 					actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
 					actualizarDireccion(seccion,idDireccion)
 				}
-				if(srcImagen=="file:///C:/Users/castr/Documents/GitHub/App_moviles/HTML/img/tatto3.png"){
+				if(srcImagen=="tatto3.png"){
 
 					precioTatuaje="300.000 $"
 					nombreTatuaje="Calavera trival"
@@ -84,7 +86,7 @@ localStorage.removeItem("contrasenaRegistrol");
 	function actualizarVista2(seccion, imagen,idPrecioTatuaje,idNombreTatuaje,idDescripcionTatuaje,idDireccion){
 		//CambiarSrc();
 		var element = $(imagen);
-				element.src = srcImagen;
+				element.src ="img/"+srcImagen;
 				actualizarPreciotatuaje(seccion,idPrecioTatuaje)
 				actualizarNombretatuaje(seccion,idNombreTatuaje)
 				actualizarDescipciontatuaje(seccion,idDescripcionTatuaje)
