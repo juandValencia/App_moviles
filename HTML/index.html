@@ -6,7 +6,7 @@
 	 <link rel="stylesheet" type="text/css" href="css/main.css">
 	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 	 <script type="text/javascript" src="js/main.js"></script>
-	<title>Single App ejemplo</title>
+	<title>Tatto a la Mano</title>
 
 <!--	<style type="text/css">
 
@@ -76,6 +76,7 @@
 		</div>
 
 	</div>
+
 </section>
 
 <!-- inicio --->
@@ -128,6 +129,8 @@
 			</div>
 
 		</div>
+		
+		
 
 	</div>
 </section>
@@ -137,16 +140,17 @@
 
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
-		<label for="Name">Inicio sesión</label>
+
+		<h2>Inicio sesión</h2>
 		<br>
 		<br>
-		<input type="text" size="15" id="useruser" maxlength="30" placeholder="Usuario" name="Usuarioinicio22">
+		<input type="text" class="largo" size="15" id="useruser" maxlength="30" placeholder="Usuario" name="Usuarioinicio22">
 		<br>
 		<br>
-		<input type="password" size="15" id="ContraUser" maxlength="30" placeholder="Contraseña" name="UsuarioContrasena22">
+		<input type="password" class="largo" size="15" id="ContraUser" maxlength="30" placeholder="Contraseña" name="UsuarioContrasena22">
 		<br>
 		<br>
-		<button id="botoninicio" class="botonNormal" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">Iniciar sesión</button>
+		<button id="botoninicio" class="botonNormal botonRemakeTamano" onclick="iniciosesionlocalstorage('inicio',useruser.value,ContraUser.value,'datosComprobar')" name="botoninicio">Iniciar sesión</button>
 		<br>
 		<label id="datosComprobar" for="Name"></label>
 		<br>
@@ -157,6 +161,10 @@
 
 		<button id="botonregistro" class="button button5" name="registro1">Registrarme</button>
 		<br>
+		<div class="pequeno">
+			<a>&copy; 2021 UPB</a>	
+		</div>
+		
 		</div>
 
 	</section>
@@ -169,25 +177,29 @@
 
 		<img src="img/logo.png" alt="" class="logo">
 		<br>
-		<label for="Name">Registro</label>
+		<h2>Registro</h2>
 		<br>
 		<br>
-		<input type="text" size="15" id="nombreRegistroregistro" maxlength="30" placeholder="Nombre" name="nombre">
+		<input type="text" class="largo" size="15" id="nombreRegistroregistro" maxlength="30" placeholder="Nombre" name="nombre">
 		<br>
 		<br>
-		<input type="text" size="15"  id="usuarioRegistroRegistro" maxlength="30" placeholder="Usuario" name="Usuario">
+		<input type="text" class="largo" size="15"  id="usuarioRegistroRegistro" maxlength="30" placeholder="Usuario" name="Usuario">
 		<br>
 		<br>
-		<input type="text" size="15" id="correoRegistroRegistro" maxlength="30" placeholder="Correo" name="Correo">
+		<input type="text" class="largo"  size="15" id="correoRegistroRegistro" maxlength="30" placeholder="Correo" name="Correo">
 		<br>
 		<br>
-		<input type="password" size="15" id="passwordRegistroRegistro" maxlength="30" placeholder="Contraseña" name="Contrasena">
+		<input type="password"  class="largo" size="15" id="passwordRegistroRegistro" maxlength="30" placeholder="Contraseña" name="Contrasena">
 		<br><br>
-		<input type="password" size="15" maxlength="30" placeholder="Repetir Contraseña" name="Rcontrasena">
+		<input type="password" class="largo" size="15" maxlength="30" placeholder="Repetir Contraseña" name="Rcontrasena">
 		<br>
 		<br>
 		<button id="botonRegistoregistro" class="botonNormal" onclick="registarmeClick(nombreRegistroregistro.value,usuarioRegistroRegistro.value,correoRegistroRegistro.value,passwordRegistroRegistro.value)"  name="botonregistro">Registrarse</button>
 		<br>
+		<div class="pequeno">
+			<a>&copy; 2021 UPB</a>	
+		</div>
+		
 		</div>
 	</section>
 
@@ -200,8 +212,8 @@
 		<div class="contenedorEnvioCodigo">
 		<br>
 
-	 	<p>Su Correo electronico es:</p>
-		<input type="text" size="20" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
+	 	<h3>Su Correo electronico es:</h3>
+		<input type="text" class="largo" size="20" maxlength="30" value="juanpepito@correo.com" name="CorreoRec1">
 		<br>
 		<div>
 			<br>
@@ -210,7 +222,7 @@
 			<label id="labelCambio" for="xD"></label>
 			<br>
 			<br>
-		<input type="text" id="codigoIngresado" size="20" maxlength="30" placeholder="Ingrese el Dodigo" name="Codigo1">
+		<input type="text" class="largo" id="codigoIngresado" size="20" maxlength="30" placeholder="Ingrese el Dodigo" name="Codigo1">
 		<br>
 		<br>
 
@@ -219,13 +231,12 @@
 			<br>
 				<label id="labelComprobar" for="xD"></label>
 			<br>
-
+			<div class="pequeno">
+				<a>&copy; 2021 UPB</a>	
+			</div>
+		
 		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<a class="pequeno">&copy; 2021 UPB</a>
+	
 	</section>
 
 
@@ -242,10 +253,10 @@
 		<h1>juanpepito@correo.com</h1>
 		<br>
 		<br>
-		<input type="text" id="contrasenaPrincipalLabel" size="15" maxlength="30" placeholder="Nueva contraseña" name="NuevaContrasena1">
+		<input type="text" class="largo" id="contrasenaPrincipalLabel" size="15" maxlength="30" placeholder="Nueva contraseña" name="NuevaContrasena1">
 		<br>
 		<br>
-		<input type="text" id="contrasenaRepetidalLabel" size="15" maxlength="30" placeholder="Repetir contraeña" placeholder="RepetirContra1">
+		<input type="text"  class="largo"  id="contrasenaRepetidalLabel" size="15" maxlength="30" placeholder="Repetir contraeña" placeholder="RepetirContra1">
 		<br>
 		<br>
 		<label id="labelContrasenasComprobar" for="xD"></label>
@@ -253,6 +264,9 @@
 		<br>
 		<button id="botonrestablecerrestablecerContrasena" class="botonNormal" onclick="cambiarContrasena('login',contrasenaPrincipalLabel.value,contrasenaRepetidalLabel.value,'labelContrasenasComprobar')" name="botonrestablecer2">Restablecer</button>
 		<br>
+		<div class="pequeno">
+				<a>&copy; 2021 UPB</a>	
+			</div>
 	</div>
 	</section>
 </section>
@@ -272,13 +286,15 @@
 
 	<p id="descripcionDiseno" >dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadnjndjandj</p>
 
-  	<img src="img/precio.png" class="icono">   <input type="text" id="precioDiseno" size="15" maxlength="30" value="$$$$$$$" name="$$$$$">
+  	<img src="img/precio.png" class="icono">   <input type="text" class="largo" id="precioDiseno" size="15" maxlength="30" value="$$$$$$$" name="$$$$$">
+	<br>
 	<br>
 
-  <img src="img/ubicacion.png" class="icono"> 	<input type="text" id="direccionDiseno"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+  <img src="img/ubicacion.png" class="icono"> 	<input type="text" class="largo" id="direccionDiseno"  size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+	<br>
 	<br>
 
-	<img src="img/user.png" class="icono">   <select name="transporte">
+	<img src="img/user.png" class="icono">   <select name="transporte" class="largo">
 
 <option>Jose Alfredo Jímenez</option>
 
@@ -290,6 +306,9 @@
 	<br>
 	<br>
 	<button id="botonSiguientediseno" class="botonNormal" onclick="actualizarVista2('reserva','disenoreserva','precioReserva','nombreReserva','descripcionReserva','direccionReserva');" name="Siguiente">Siguiente</button>
+	<div class="pequeno">
+				<a>&copy; 2021 UPB</a>	
+			</div>
 </div>
 </section>
 
@@ -309,13 +328,18 @@
 	<br>
 	<a id="descripcionReserva" class="reservaAncho">dsbhfdsbh s n ansnjnjwnjnsjnjandjnadjnajdnjadsadsdnjndjandj</a>
 	<br><br>
-  <img src="img/precio.png" class="icono"> 	<input type="text" id="precioReserva" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
+  <img src="img/precio.png" class="icono"> 	<input type="text" class="largo" id="precioReserva" size="15" maxlength="30" value="$$$$$$$" name="$$$$$" readonly>
 	<br>
- <img src="img/ubicacion.png" class="icono"> 	<input type="text" id="direccionReserva" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
 	<br>
-	<img src="img/fecha.png" class="icono"> 	<input type="date" size="15" maxlength="30" id="start" name="trip-start" value="2018-07-22" min="2021-01-01" max="2022-12-31" >
+ <img src="img/ubicacion.png" class="icono"> 	<input type="text" class="largo" id="direccionReserva" size="15" maxlength="30" value="calle elm 23 16" name="DIr" readonly>
+	<br>
+	<br>
+	<img src="img/fecha.png" class="icono"> 	<input type="date" class="largo" size="15" maxlength="30" id="start" name="trip-start" value="2018-07-22" min="2021-01-01" max="2022-12-31" >
 	<br><br>
 	<button id="botonreservarreservar" class="botonNormal" onclick="almacenarFecha(start.value);" name="reservarTatu">Reservar</button>
+	<div class="pequeno">
+				<a>&copy; 2021 UPB</a>	
+			</div>
 </div>
 
 </section>
@@ -335,6 +359,9 @@
 
 	<a>Su reserva fue hecha con exito.</a>
 	<br>
+	<div class="pequeno">
+				<a>&copy; 2021 UPB</a>	
+			</div>
 </div>
 </section>
 
@@ -361,7 +388,7 @@
 		<br>
 		<div class="contenedorEnvioCodigo">
 			<br>
-		<b>Menu</b>
+		<h1>Menu</h1>
 		<br>
 		<br>
 		<button id="botoninicioBarraDesplegable" class="button button5" name="inicio1">Inicio</button>
@@ -374,6 +401,9 @@
 		<br>
 		<br>
 		<button id="botonLogoutBarraDesplegable" class="botonNormal" onclick="cerrarSesion('login','datosComprobar')" name="Logout">Cerrar sesión</button>
+		<div class="pequeno">
+				<a>&copy; 2021 UPB</a>	
+			</div>
 	</div>
 
 	</section>
