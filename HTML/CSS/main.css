@@ -146,7 +146,8 @@ a.reservaAncho{
 
 .ocultar {
   /* display: none;*/
-   display: none;|
+
+   display: none;
 }
 
 h1.grande {
@@ -237,6 +238,10 @@ background-image: url("../IMG/fondo2.png");
 }
 #calendario{
    background-image: url("../IMG/fondo3.png");D
+}
+
+#creditos{
+background: pink;
 }
 
 .boton {

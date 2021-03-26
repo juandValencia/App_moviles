@@ -1,10 +1,11 @@
-var splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,diseno,barra ,calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_restablecerenvioCodigo
+var creditos,splash ,inicio ,login, registro, envioCodigo,restablecerContrasena,disenos,diseno,barra ,calendario,btn_inicio,btn_registro,btn_olvidocontra ,	btn_restrarse,btn_restablecerenvioCodigo
 ,btn_restablecerContrasena , btn_LogoutbarraDesplegable, btn_iraDiseno, reserva, btn_Siguientereserva, btn_iniciobarraDesplegable, btn_reservar1, btn_calendariobarraDesplegable;
 var secciones ,btnAtrasBarra,btn_atras1;
 let fechaSeparada;
 var seccionActual ,seccionNavegacion,seccionAnterior ,seccionActual1,seccionAnterior1,btnAtras ,btn_barra  ,btn_iniciobarraDesplegable ,btn_calendariobarraDesplegable,btn_LogoutbarraDesplegable;
 let idEnClick ,srcImagen, precioTatuaje, nombreTatuaje, descripcionTatuaje, idMapa;
 var codigoCambioContraseña=763721;
+var botonCreditos;
 
 
 	function irA(seccion){
@@ -109,6 +110,7 @@ localStorage.removeItem("contrasenaRegistrol");
 		reserva=document.getElementById("reservar");
 		reservaExitosa1=document.getElementById("reservaExitosa");
 		calendario=document.getElementById('calendario');
+		creditos=document.getElementById("creditos");
 
 
 		btn_inicio=document.getElementById("botoninicio");
@@ -130,6 +132,7 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_LogoutbarraDesplegable=document.getElementById("botonLogoutBarraDesplegable");
 		btnAtrasBarra=document.getElementById('atrasBarra');
 		btn_atras1=document.getElementsByClassName("volver2");
+		botonCreditos=document.getElementById("botonCreditos");
 
 		secciones=[splash,inicio,login,registro,envioCodigo,restablecerContrasena,disenos,diseno,barra,reserva,reservaExitosa1,calendario];
 		console.log(secciones)
@@ -155,6 +158,7 @@ localStorage.removeItem("contrasenaRegistrol");
 		btn_Siguientereserva.addEventListener("click",()=>{irA(reserva);})
 		btn_iniciobarraDesplegable.addEventListener("click",()=>{irA(inicio);})
 		btn_reservar1.addEventListener("click",()=>{irA(reservaExitosa1);})
+		botonCreditos.addEventListener("click",()=>{irA(creditos);})
 
 
 
