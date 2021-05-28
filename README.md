@@ -6,6 +6,9 @@ https://www.canva.com/design/DAEYjuCP2zo/mVtmAFPBAi5rU-VrYQKQ5w/edit
 # Como utilizar este proyecto
 no existen requisitos previos para la implementacion de este proyecto, sin embargo se recomienda su ejecucion para pruebas y demas en Google Chrome
 (pronto el instalador)
+
+# instalador
+https://play.google.com/store/apps/details?id=com.tattoApp.app
 # Como debe lucir el proyecto ya instalado
 https://upbeduco-my.sharepoint.com/:i:/g/personal/santiago_restrepov_upb_edu_co/ETABtFFWLR1JrF2IaydeZc4BXWPcEUfU2Bq6Oow1NNUuWg?e=zC7wBA
 https://upbeduco-my.sharepoint.com/:i:/g/personal/santiago_restrepov_upb_edu_co/EY7lEd47qgVFl69dmt2DhPABdsq0nBU-whOhRgkoXkY6FA?e=twmnMg
