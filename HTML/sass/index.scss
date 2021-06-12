@@ -1,0 +1,14 @@
+@use "div";
+@use "sections";
+@use "logo_imagenes";
+@use "botons";
+body {
+  font-family: Gans Gotico Globo;
+   width: 310px;
+  height: 450px;
+  position: absolute;
+}
+.ocultar {
+  /* display: none;*/
+   display: none
+}
